@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh  'echo "test"'
-                sh  'yum install gcc'
+                sh  'sudo yum install gcc'
                 sh  'pip --version'
             }
         }
