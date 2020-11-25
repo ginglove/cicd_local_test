@@ -26,7 +26,6 @@ pipeline {
         }
         stage('Verify Robot Version'){
             steps{  
-                sh 'robot --version'
                 sh 'ls -al'
                 sh 'sh ./Data/run.sh'
             }            
