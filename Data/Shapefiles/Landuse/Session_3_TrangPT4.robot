@@ -33,7 +33,7 @@ TC001
     [Arguments]        ${url}
     ${browser}         convert to lowercase    ${browser}
     ${true}            convert to boolean      true
-    ${list_options}    Create List             --no-sandbox	--headless    --ignore-certificate-errors    --disable-web-security    --disable-impl-side-painting    --enable-features=NetworkService,NetworkServiceInProcess
+    ${list_options}    Create List             --no-sandbox	--headless    --ignore-certificate-errors    --disable-web-security    --disable-impl-side-painting     --disable-dev-shm-usage   --enable-features=NetworkService,NetworkServiceInProcess
 
     ${args}                    Create Dictionary                    args=${list_options}
     ${desired_capabilities}    create dictionary
