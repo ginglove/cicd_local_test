@@ -9,7 +9,7 @@ pipeline {
                 sh  'pip --version'
             }
         }
-        stage('Install robot requirement'){\
+        stage('Install robot requirement'){
             steps{  
                 sh 'pip install -r ./robot_requirements.txt'
             }
