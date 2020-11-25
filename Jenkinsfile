@@ -21,7 +21,7 @@ pipeline {
                 sh 'yum localinstall ./google-chrome-stable_current_x86_64.rpm -y'
                 sh 'google-chrome --version'
                 sh 'pip install -r ./python_setup_env/robot_requirements.txt'
-                sh 'webdrivermanager chrome:87.0.4280.66'
+                sh 'webdrivermanager chrome'
             }
         }
         stage('Verify Robot Version'){
