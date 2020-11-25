@@ -20,6 +20,7 @@ pipeline {
                 sh 'wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm'
                 sh 'yum localinstall ./google-chrome-stable_current_x86_64.rpm -y'
                 sh 'google-chrome --version'
+                sh 'which google-chrome'
                 sh 'pip install -r ./python_setup_env/robot_requirements.txt'
                 sh 'webdrivermanager chrome'
             }
