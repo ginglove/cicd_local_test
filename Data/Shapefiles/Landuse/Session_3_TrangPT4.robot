@@ -33,14 +33,21 @@ TC001
     [Arguments]        ${url}
     ${browser}         convert to lowercase    ${browser}
     ${true}            convert to boolean      true
-    ${list_options}    Create List             --no-sandbox	--headless    --ignore-certificate-errors    --disable-web-security    --disable-impl-side-painting     --disable-dev-shm-usage     --remote-debugging-port=9222    --enable-features=NetworkService,NetworkServiceInProcess
+    ${list_options}    Create List             --no-sandbox	    --headless    --ignore-certificate-errors    --disable-web-security    --disable-impl-side-painting     --disable-dev-shm-usage     --remote-debugging-port=9222    --enable-features=NetworkService,NetworkServiceInProcess
+    ${chrome_options}=  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
+    Call Method    ${chrome_options}    add_argument    test-type
+    Call Method    ${chrome_options}    add_argument    --disable-extensions
+    Call Method    ${chrome_options}    add_argument    --headless
+    Call Method    ${chrome_options}    add_argument    --disable-gpu
+    Call Method    ${chrome_options}    add_argument    --no-sandbox
+    Call Method    ${chrome_options}    add_argument    --disable-dev-shm-usage
 
     ${args}                    Create Dictionary                    args=${list_options}
     ${desired_capabilities}    create dictionary
     ...                        acceptSslCerts=${true}
     ...                        acceptInsecureCerts=${true}
     ...                        ignore-certificate-errors=${true}
-    ...                        chromeOptions=${args}
+    ...                        chromeOptions=${chrome_options}
 
      Run Keyword If    '${browser}' == 'chrome'        Run Keywords
      ...               Open Browser                    ${url}                                            ${browser}
@@ -50,6 +57,9 @@ TC001
 #    ...               Open Chrome Headless Browser    ${url}
      ...               AND                             [Common] - Maximize browser size to fit screen
      ...               ELSE                            should be true                                    ${FALSE}
+
+
+
 
 [Common] - Maximize browser size to fit screen
     Set window position    0       0
