@@ -25,11 +25,11 @@ pipeline {
                 sh 'webdrivermanager chrome'
             }
         }
-//        stage('Verify Robot Version'){
-//            steps{  
-//                sh 'ls -al'
-//                sh 'sh ./Data/run.sh'
-//            }            
-//        }
+        stage('Verify Robot Version'){
+            steps{  
+                sh 'ls -al'
+                sh 'sh ./Data/run.sh'
+            }            
+        }
     }
 }
