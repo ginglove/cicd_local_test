@@ -17,7 +17,7 @@ robotframework-rabbitmq
 robotframework-pabot==0.45
 robotframework-seleniumlibrary==3.3.1
 robotframework-databaselibrary
-pycrypto==2.6.1
+#pycrypto==2.6.1
 xlrd==1.2.0
 python-dateutil==2.8.0
 prompt-toolkit==1.0.15
