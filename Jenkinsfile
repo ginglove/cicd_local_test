@@ -6,6 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh  'echo "test"'
+                sh  'apt-get update && apt-get -y install sudo'
                 sh  'sudo yum install gcc'
                 sh  'pip --version'
             }
