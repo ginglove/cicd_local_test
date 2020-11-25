@@ -17,7 +17,7 @@ pipeline {
         stage('Install robot requirement'){
             steps{  
                 sh 'pip install -r ./python_setup_env/robot_requirements.txt'
-                sh 'apt-get install google-chrome-stable'
+                sh 'yum install google-chrome-stable'
                 sh 'google-chrome --version'
                 sh 'webdrivermanager chrome:85.0.4183.121'
             }
