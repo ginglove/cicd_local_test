@@ -13,7 +13,7 @@ service_name=$1
 #environment_path=$PWD
 #echo "=== environment_path is $environment_path ==="
 path="$(dirname "$(dirname $PWD)")"
-curr_path="$(dirname $PWD)"
+curr_path=$pwd
 echo "=== path is $path === "
 #environment_name=${environment_path##*/}
 #echo "=== env name is $environment_name === "
