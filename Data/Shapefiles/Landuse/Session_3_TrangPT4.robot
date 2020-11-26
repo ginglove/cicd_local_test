@@ -35,7 +35,7 @@ TC001
      ...               Open Browser                    ${url}                                            ${browser}
      ...               AND                             [Common] - Maximize browser size to fit screen
      ...               ELSE IF                         '${browser}' == 'headlesschrome'                  Run keywords
-     ...               Open Chrome Headless Browser    ${url}
+     ...               [Common] - Open Chrome Headless Browser      ${url}
      ...               AND                             [Common] - Maximize browser size to fit screen
      ...               ELSE                            should be true                                    ${FALSE}
 
