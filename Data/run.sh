@@ -27,9 +27,7 @@ echo "=== Run robot test==="
 parentpath="$(dirname "$(dirname "$(dirname $PWD)")")"
 TESTCASE_FOLDER="$PWD/Data/Shapefiles/Landuse"
 RESULT_FOLDER="$PWD/Data/Shapefiles/Landuse/Reports"
-rm -rf ./results
-mkdir ./results
+
 robot -L TRACE -v browser:headlesschrome -e ignore -e not-ready -d $RESULT_FOLDER $TESTCASE_FOLDER
-cp ./Data/Shapefiles/Landuse/Reports ./results
 ########################### ENABLE BELOW SECTION TO DISABLE TEST ##########################
 echo "=== Run Robot !!! Done !!! ==="

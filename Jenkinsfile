@@ -29,6 +29,9 @@ pipeline {
             steps{ 
                 sh 'ls -al'
                 sh 'sh ./Data/run.sh'
+                sh 'rm -rf ./results'
+                sh 'mkdir ./results'
+                sh 'cp -r ./Data/Shapefiles/Landuse/Reports ./results'
                 script {
                   step(
                     [
