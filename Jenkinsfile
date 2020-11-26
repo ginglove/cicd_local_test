@@ -32,6 +32,7 @@ pipeline {
                 sh 'rm -rf ./results'
                 sh 'mkdir ./results'
                 sh 'cp -r ./Data/Shapefiles/Landuse/Reports ./results'
+                sh ' ls -al ./results'
                 script {
                   step(
                     [
