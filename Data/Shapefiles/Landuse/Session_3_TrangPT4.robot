@@ -31,8 +31,23 @@ TC001
 
 [Common] - Open Chrome Browser with mode
     [Arguments]        ${url}
-    ${browser}         convert to lowercase    ${browser}
-    ${true}            convert to boolean      true
+     Run Keyword If    '${browser}' == 'chrome'        Run Keywords
+     ...               Open Browser                    ${url}                                            ${browser}
+     ...               AND                             [Common] - Maximize browser size to fit screen
+     ...               ELSE IF                         '${browser}' == 'headlesschrome'                  Run keywords
+     ...               Open Chrome Headless Browser    ${url}
+     ...               AND                             [Common] - Maximize browser size to fit screen
+     ...               ELSE                            should be true                                    ${FALSE}
+
+
+
+
+[Common] - Maximize browser size to fit screen
+    Set window position    0       0
+    Set window size        1440    900
+
+[Common] - Open Chrome Headless Browser 
+    [Arguments]        ${url}
     ${chrome_options}=  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
     Call Method    ${chrome_options}    add_argument    test-type
     Call Method    ${chrome_options}    add_argument    --disable-extensions
@@ -43,18 +58,3 @@ TC001
     Create Webdriver                                  Chrome               chrome_options=${chrome_options}
     [Common] - Maximize browser size to fit screen
     Go To                                             ${url}
-#      Run Keyword If    '${browser}' == 'chrome'        Run Keywords
-#      ...               Open Browser                    ${url}                                            ${browser}
-#      ...               AND                             [Common] - Maximize browser size to fit screen
-#      ...               ELSE IF                         '${browser}' == 'headlesschrome'                  Run keywords
-#      ...               Open Browser                    ${url}                                            ${browser}      desired_capabilities=${desired_capabilities}
-# #    ...               Open Chrome Headless Browser    ${url}
-#      ...               AND                             [Common] - Maximize browser size to fit screen
-#      ...               ELSE                            should be true                                    ${FALSE}
-
-
-
-
-[Common] - Maximize browser size to fit screen
-    Set window position    0       0
-    Set window size        1440    900
