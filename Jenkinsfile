@@ -26,9 +26,24 @@ pipeline {
             }
         }
         stage('Verify Robot Version'){
-            steps{  
+            steps{ 
                 sh 'ls -al'
                 sh 'sh ./Data/run.sh'
+                script {
+                  step(
+                    [
+                      $class                    : 'RobotPublisher',
+                      outputPath                : 'results',
+                      outputFileName            : "output.xml",
+                      reportFileName            : "report.html",
+                      logFileName               : "log.html",
+                      disableArchiveOutput      : false,
+                      passThreshold             : 100,
+                      unstableThreshold         : 95.0,
+                      otherFiles                : "*.png"
+                    ]
+                  )
+                }                
             }            
         }
     }
