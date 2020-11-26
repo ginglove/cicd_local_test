@@ -20,13 +20,11 @@ echo "=== path is $path === "
 
 
 test_path=$2
-echo "=== PATH is $path==="
+echo "=== PATH is $path ==="
 
-echo "=== TEST_PATH is $test_path==="
+echo "=== TEST_PATH is $test_path ==="
 
-echo "=== Check current libs ==="
-#pip3 list
-
+echo "=== CURR_PATH is $curr_path ==="
 
 ############ RUNNING TEST ##################
 echo "=== Run robot test==="
