@@ -6,6 +6,7 @@ Test Setup       Run keywords
 ...              [Keyword] - Click on menu item pricing
 Test Teardown    [Keyword] - Close browser
 
+### --- Hoang Van Minh
 ### --- All test cases of header part
 *** Test Cases ***
 
