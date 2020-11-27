@@ -1,7 +1,6 @@
 *** Settings ***
 
-Resource    ../RB01_resource/import.robot
-
+Resour
 *** Keywords ***
 
 [Common] - Maximize browser size to fit screen
