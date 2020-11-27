@@ -17,16 +17,26 @@ Resource    ../Resource/resources.robot
 
 *** Test Cases ***
 TC001
-    [Kw] - Open browser    ${url}
-    sleep   3s
-    close browser
+    [Kw] - Open multiple browser    @{url}
 
 
 
 *** Keywords ***
-[Kw] - Open browser
-    [Arguments]         ${url}
-    [Common] - Open Chrome Browser with mode    ${url}
+[Kw] - Open multiple browser
+    [Arguments]         @{url}
+    FOR   ${url}    IN      @{url}
+        [Common] - Open Chrome Browser with mode    ${url}
+        sleep   3s
+        close browser
+    END
+
+[Kw] - Open multiple browser without headless
+    [Arguments]         @{url}
+    FOR   ${url}    IN      @{url}
+        Open browser        ${url}       chrome
+        sleep   3s
+        close browser
+    END
 
 
 [Common] - Open Chrome Browser with mode
@@ -38,8 +48,6 @@ TC001
      ...               [Common] - Open Chrome Headless Browser      ${url}
      ...               AND                             [Common] - Maximize browser size to fit screen
      ...               ELSE                            should be true                                    ${FALSE}
-
-
 
 
 [Common] - Maximize browser size to fit screen
