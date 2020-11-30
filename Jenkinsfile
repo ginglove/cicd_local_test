@@ -14,7 +14,6 @@ pipeline {
                 sh  'pip3.7 --version'
                 sh  'google-chrome --version'
                 sh  'chromedriver --version'
-                sh  'robot --version'
             }
         }
         stage('Verify Robot Version'){
