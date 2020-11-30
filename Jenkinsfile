@@ -11,7 +11,7 @@ pipeline {
         stage('Check Dependencies Requirement') {
             steps {
                 sh  'echo "test"'
-                sh  'pip --version'
+                sh  'pip3.7 --version'
                 sh  'google-chrome --version'
                 sh  'chromedriver --version'
                 sh  'robot --version'
