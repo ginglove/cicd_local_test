@@ -3,7 +3,7 @@ pipeline {
 //execution and that each stage directive must specify its own agent section.
     agent {docker 
            {
-               image 'docker_robot_python_37'
+               image 'docker_robot_python_37/docker_robot_python_37:1.0'
                args '-u root --privileged'
            }
           }
