@@ -69,9 +69,7 @@ Resource    ../resource/import.robot
 
 [Common] - Select label of dropdownlist by label
     [Arguments]  ${dropdownlist_xpath}   ${label}
-    click element   ${dropdownlist_xpath}
-    click element   ${dropdownlist_xpath}//option[@value='${label}' and text()='${label}']
-    click element   ${dropdownlist_xpath}
+     Select From List By Label    ${dropdownlist_xpath}   ${label}
 
 [Common] - Verify value is displayed on item
     [Arguments]     ${item_loc}     ${text}
@@ -95,3 +93,12 @@ Resource    ../resource/import.robot
     ${css}=         Get WebElement    ${locator}
     ${prop_val}=    Call Method       ${css}    value_of_css_property    ${attribute name}
     Log to console    ----------------${prop_val}
+
+[Common] - Scrolling page using JS executor
+# Scroll page till it reach a pixel number
+    [Arguments]    ${scroll_height}
+    execute javascript    window.scrollTo(0,${scroll_height})
+
+Get attribute
+
+    [Common] - Get CSS Property Value   //ul[@class='plan-feature']//li[1]//span[@class='option-mark']     background-color 
