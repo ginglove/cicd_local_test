@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource    ../RB01_resource/import.robot
+Resource    ../resource/import.robot
 
 ### --- All keywords of header part
 *** Keywords ***
