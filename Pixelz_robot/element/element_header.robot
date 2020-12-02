@@ -80,7 +80,4 @@ ${title_documentAPI}     Developer API - Docs
 ${title_faq}             Pixelz: Pergunte-nos Sobre o Outsourcing de Imagens de Produto
 ${title_origin}          Pixelz: Sobre nossa empresa Dinamarquesa de edicão de imagens
 ${title_csr}             Responsabilidade Social Corporativa
-${title_login}           Pixelz Administration 
-
-
-${color_solo}    92c36a
+${title_login}           Pixelz Administration
