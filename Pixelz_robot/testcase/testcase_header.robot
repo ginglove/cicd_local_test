@@ -7,222 +7,246 @@ Test Teardown    [Keyword] - Close browser
 ### --- All test cases of header part
 *** Test Cases ***
 
-PX_00001 - Check logo when click on
+PX_00001 - Check menuitems on menu bar have value as required
+
+    [Keyword] - Check elements has value as required
+
+PX_00002 - Check logo when click on
 
     [Keyword] - Click on logo
 
-PX_00002 - Check menu item [Home] on menu bar has value "Home"
-
-    [Keyword] - Check element has value "Home"
-
 PX_00003 - Check when click on menu item [Home]
 
-    [Keyword] - Click on menu item home
+    [Keyword] - Click on menu item Home
 
-PX_00004 - Check dropdownlist[Plans] on menu bar has value "PLANOS"
+PX_00004 - Check when hover over dropdownlist [Planos]
 
-    [Keyword] - Check element has value "PLANOS"
+    [Keyword] - Hover over dropdownlist Planos
 
-PX_00005 - Check when hover over dropdownlist [Plans]
+PX_00005 - Check when click on dropdownlistItem [Solo]
 
-    [Keyword] - Hover over dropdownlist plans
+    [Keyword] - Click on dropdownlistItem Solo
 
-PX_00006 - Check dropdownlistItem [Solo] has value "SOLO"
+PX_00006 - Check when hover over dropdownlistItem [Solo]
 
-    [Keyword] - Check element has value "SOLO"
+    [Keyword] - Hover over dropdownlistItem Solo
 
-PX_00007 - Check when click on dropdownlistItem [Solo]
+PX_00007 - Check when click on dropdownlistItem [Professional]
 
-    [Keyword] - Click on dropdownlistItem solo
+    [Keyword] - Click on dropdownlistItem Professional
 
-PX_00008 - Check dropdownlistItem [Professional] has value "PROFESSIONAL"
+PX_00008 - Check when hover over dropdownlistItem [Professional]
 
-    [Keyword] - Check element has value "PROFESSIONAL"
+    [Keyword] - Hover over dropdownlistItem Professional
 
-PX_00009 - Check when click on dropdownlistItem [Professional]
+PX_00009 - Check when click on dropdownlistItem [Enterprise]
 
-    [Keyword] - Click on dropdownlistItem professional
+    [Keyword] - Click on dropdownlistItem Enterprise
 
-PX_00010 - Check dropdownlistItem [Enterprise] has value "ENTERPRISE"
+PX_00010 - Check when hover over dropdownlistItem [Enterprise]
 
-    [Keyword] - Check element has value "ENTERPRISE"
+    [Keyword] - Hover over dropdownlistItem Enterprise
 
-PX_00011 - Check when click on dropdownlistItem [Enterprise]
+PX_00011 - Check when click on dropdownlistItem [API]
 
-    [Keyword] - Click on dropdownlistItem enterprise
+    [Keyword] - Click on dropdownlistItem API
 
-PX_00012 - Check dropdownlistItem [API] has value "API"
+PX_00012 - Check when hover over dropdownlistItem [API]
 
-    [Keyword] - Check element has value "API"
+    [Keyword] - Hover over dropdownlistItem API
 
-PX_00013 - Check when click on dropdownlistItem [API]
+PX_00013 - Check when click on menu item [Clientes]
 
-    [Keyword] - Click on dropdownlistItem api
+    [Keyword] - Click on menu item Clientes
 
-PX_00014 - Check menu item [Customer] on menu bar has value "CLIENTES"
+PX_00014 - Check when click on menu item [Preços]
 
-    [Keyword] - Check element has value "CLIENTES"
+    [Keyword] - Click on menu item Preços
 
-PX_00015 - Check when click on menu item [Customer]
+PX_00015 - Check when hover over dropdownlist [Material]
 
-    [Keyword] - Click on menu item customer
+    [Keyword] - Hover over dropdownlist Material
 
-PX_00016 - Check menu item [Pricing] on menu bar has value "PREÇOS"
+PX_00016 - Check when click on dropdownlistItem [Estudos de Caso]
 
-    [Keyword] - Check element has value "PREÇOS"
+    [Keyword] - Click on dropdownlistItem Estudos de Caso
 
-PX_00017 - Check when click on menu item [Pricing]
+PX_00017 - Check when hover over dropdownlistItem [Estudos de Caso]
 
-    [Keyword] - Click on menu item pricing
+    [Keyword] - Hover over dropdownlistItem Estudos de Caso
 
-PX_00018 - Check dropdownlist [Resourse] on menu bar has value "MATERIAL"
+PX_00018 - Check when click on dropdownlistItem [Blog]
 
-    [Keyword] - Check element has value "MATERIAL"
+    [Keyword] - Click on dropdownlistItem Blog
 
-PX_00019 - Check when hover over dropdownlist [Resourse]
+PX_00019 - Check when hover over dropdownlistItem [Blog]
 
-    [Keyword] - Hover over dropdownlist "Resourse"
+    [Keyword] - Hover over dropdownlistItem Blog
 
-PX_00020 - Check dropdownlistItem [Case Studies] has value "ESTUDOS DE CASO"
+PX_00020 - Check when click on dropdownlistItem [Guias Passo a Passo]
 
-    [Keyword] - Check element has value "ESTUDOS DE CASO"
+    [Keyword] - Click on dropdownlistItem Guias Passo a Passo
 
-PX_00021 - Check when click on dropdownlistItem [Case Studies]
+PX_00021 - Check when hover over dropdownlistItem [Guias Passo a Passo]
 
-    [Keyword] - Click on dropdownlistItem case studies
+    [Keyword] - Hover over dropdownlistItem Guias Passo a Passo
 
-PX_00022 - Check dropdownlistItem [Blog] has value "BLOG"
+PX_00022 - Check when click on dropdownlistItem [Suporte]
 
-    [Keyword] - Check element has value "BLOG"
+    [Keyword] - Click on dropdownlistItem Suporte
 
-PX_00023 - Check when click on dropdownlistItem [Blog]
+PX_00023 - Check when hover over dropdownlistItem [Suporte]
 
-    [Keyword] - Click on dropdownlistItem blog
+    [Keyword] - Hover over dropdownlistItem Suporte
 
-PX_00024 - Check dropdownlistItem [Premium Guides] has value "GUIAS PASSO A PASSO"
+PX_00024 - Check when click on dropdownlistItem [Parceiros]
 
-    [Keyword] - Check element has value "GUIAS PASSO A PASSO"
+    [Keyword] - Click on dropdownlistItem Parceiros
 
-PX_00025 - Check when click on dropdownlistItem [Premium Guides]
+PX_00025 - Check when hover over dropdownlistItem [Parceiros]
 
-    [Keyword] - Click on dropdownlistItem premium guides
+    [Keyword] - Hover over dropdownlistItem Parceiros
 
-PX_00026 - Check dropdownlistItem [Support] has value "SUPORTE"
+PX_00026 - Check when click on dropdownlistItem [Documentação API]
 
-    [Keyword] - Check element has value "SUPORTE"
+    [Keyword] - Click on dropdownlistItem Documentação API
 
-PX_00027 - Check when click on dropdownlistItem [Support]
+PX_00027 - Check when hover over dropdownlistItem [Documentação API]
 
-    [Keyword] - Click on dropdownlistItem support
+    [Keyword] - Hover over dropdownlistItem Documentação API
 
-PX_00028 - Check dropdownlistItem [Partners] has value "PARCEIROS"
+PX_00028 - Check when click on dropdownlistItem [Perguntas Frequentes]
 
-    [Keyword] - Check element has value "PARCEIROS"
+    [Keyword] - Click on dropdownlistItem Perguntas Frequentes
 
-PX_00029 - Check when click on dropdownlistItem [Partners]
+PX_00029 - Check when hover over dropdownlistItem [Perguntas Frequentes]
 
-    [Keyword] - Click on dropdownlistItem partners
+    [Keyword] - Hover over dropdownlistItem Perguntas Frequentes
 
-PX_00030 - Check dropdownlistItem [Document API] has value "DOCUMENTAÇÃO API"
+PX_00030 - Check when hover over dropdownlist [Sobre Nós]
 
-    [Keyword] - Check element has value "DOCUMENTAÇÃO API"
+    [Keyword] - Hover over dropdownlist Sobre Nós
 
-PX_00031 - Check when click on dropdownlistItem [Document API]
+PX_00031 - Check when click on dropdownlistItem [Origem]
 
-    [Keyword] - Click on dropdownlistItem document API
+    [Keyword] - Click on dropdownlistItem Origem
 
-PX_00032 - Check dropdownlistItem [FAQ] has value "PERGUNTAS FREQUENTES"
+PX_00032 - Check when hover over dropdownlistItem [Origem]
 
-    [Keyword] - Check element has value "PERGUNTAS FREQUENTES"
+    [Keyword] - Hover over dropdownlistItem Origem
 
-PX_00033 - Check when click on dropdownlistItem [FAQ]
+PX_00033 - Check when click on dropdownlistItem [Responsabilidade Social Corporativa]
 
-    [Keyword] - Click on dropdownlistItem faq
+    [Keyword] - Click on dropdownlistItem Responsabilidade Social Corporativa
 
-PX_00034 - Check dropdownlist [About Us] on menu bar has value "SOBRE NÓS"
+PX_00034 - Check when hover over dropdownlistItem [Responsabilidade Social Corporativa]
 
-    [Keyword] - Check element has value "SOBRE NÓS"
+    [Keyword] - Hover over dropdownlistItem Responsabilidade Social Corporativa
 
-PX_00035 - Check when hover over dropdownlist [About Us]
+PX_00035 - Check when click on button <Login>
 
-    [Keyword] - Hover over dropdownlist about us
+    [Keyword] - Click on button Login
 
-PX_00036 - Check dropdownlistItem [Origin] has value "Origem"
+PX_00036 - Check when hover over button <Login>
 
-    [Keyword] - Check element has value "ORIGEM"
+    [Keyword] - Hover over dropdownlistItem Login
 
-PX_00037 - Check when click on dropdownlistItem [Origin]
+PX_00037 - Check when click on button <Inscreva-se>
 
-    [Keyword] - Click on dropdownlistItem origin
+    [Keyword] - Click on button Inscreva-se
 
-PX_00038 - Check dropdownlistItem [CSR] has value "RESPONSABILIDADE SOCIAL CORPORATIVA"
+PX_00038 - Check when hover over button <Inscreva-se>
 
-    [Keyword] - Check element has value "RESPONSABILIDADE SOCIAL CORPORATIVA"
+    [Keyword] - Hover over button Inscreva-se
 
-PX_00039 - Check when click on dropdownlistItem [CSR]
+PX_00039 - Check when hover over dropdownlist [Localização]
 
-    [Keyword] - Click on dropdownlistItem csr
+    [Keyword] - Hover over dropdownlist Localização
 
-PX_00040 - Check button <Login> has value "LOG IN"
+PX_00040 - Check when click on dropdownlistItem [Padrão]
 
-    [Keyword] - Check element has value "LOG IN"
+    [Keyword] - Click on dropdownlistItem Padrão
 
-PX_00041 - Check when click on button <Login>
+PX_00041 - Check when hover over dropdownlistItem [Padrão]
 
-    [Keyword] - Click on button login
+    [Keyword] - Hover over dropdownlistItem Padrão
 
-PX_00042 - Check button <Sign up> has value "INSCREVA-SE"
+PX_00042 - Check when click on dropdownlistItem [Brasil]
 
-    [Keyword] - Check element has value "INSCREVA-SE"
+    [Keyword] - Click on dropdownlistItem Brasil
 
-PX_00043 - Check when click on button <Sign up>
+PX_00043 - Check when hover over dropdownlistItem [Brasil]
 
-    [Keyword] - Click on button sign up
+    [Keyword] - Hover over dropdownlistItem Brasil
 
-PX_00044 - Check when hover over dropdownlist [Location]
+PX_00044 - Check when click on dropdownlistItem [Dinamarca]
 
-    [Keyword] - Hover over dropdownlist location
+    [Keyword] - Click on dropdownlistItem Dinamarca
 
-PX_00045 - Check when click on dropdownlistItem [Portuguese]
+PX_00045 - Check when hover over dropdownlistItem [Dinamarca]
 
-    [Keyword] - Click on dropdownlistItem portuguese
+    [Keyword] - Hover over dropdownlistItem Dinamarca
 
-PX_00046 - Check when click on dropdownlistItem [Brasil]
+PX_00046 - Check when click on dropdownlistItem [Alemanha]
 
-    [Keyword] - Click on dropdownlistItem brasil
+    [Keyword] - Click on dropdownlistItem Alemanha
 
-PX_00047 - Check when click on dropdownlistItem [Denmark]
+PX_00047 - Check when hover over dropdownlistItem [Alemanha]
 
-    [Keyword] - Click on dropdownlistItem denmark
+    [Keyword] - Hover over dropdownlistItem Alemanha
 
-PX_00048 - Check when click on dropdownlistItem [Deutschland]
+PX_00048 - Check when click on dropdownlistItem [Espanha]
 
-    [Keyword] - Click on dropdownlistItem deutschland
+    [Keyword] - Click on dropdownlistItem Espanha
 
-PX_00049 - Check when click on dropdownlistItem [España]
+PX_00049 - Check when hover over dropdownlistItem [Espanha]
 
-    [Keyword] - Click on dropdownlistItem españa
+    [Keyword] - Hover over dropdownlistItem Espanha
 
-PX_00050 - Check when click on dropdownlistItem [France]
+PX_00050 - Check when click on dropdownlistItem [França]
 
-    [Keyword] - Click on dropdownlistItem france
+    [Keyword] - Click on dropdownlistItem França
 
-PX_00051 - Check when click on dropdownlistItem [Italia]
+PX_00051 - Check when hover over dropdownlistItem [França]
 
-    [Keyword] - Click on dropdownlistItem italia
+    [Keyword] - Hover over dropdownlistItem França
 
-PX_00052 - Check when click on dropdownlistItem [Nederland]
+PX_00052 - Check when click on dropdownlistItem [Itália]
 
-    [Keyword] - Click on dropdownlistItem nederland
+    [Keyword] - Click on dropdownlistItem Itália
 
-PX_00053 - Check when click on dropdownlistItem [Norge]
+PX_00053 - Check when hover over dropdownlistItem [Itália]
 
-    [Keyword] - Click on dropdownlistItem norge
+    [Keyword] - Hover over dropdownlistItem Itália
 
-PX_00054 - Check when click on dropdownlistItem [Sverige]
+PX_00054 - Check when click on dropdownlistItem [Holanda]
 
-    [Keyword] - Click on dropdownlistItem sverige
+    [Keyword] - Click on dropdownlistItem Holanda
 
-PX_00055 - Check when click on dropdownlistItem [United States]
+PX_00055 - Check when hover over dropdownlistItem [Holanda]
 
-    [Keyword] - Click on dropdownlistItem united states
+    [Keyword] - Hover over dropdownlistItem Holanda
+
+PX_00056 - Check when click on dropdownlistItem [Noruega]
+
+    [Keyword] - Click on dropdownlistItem Noruega
+
+PX_00057 - Check when hover over dropdownlistItem [Noruega]
+
+    [Keyword] - Hover over dropdownlistItem Noruega
+
+PX_00058 - Check when click on dropdownlistItem [Suécia]
+
+    [Keyword] - Click on dropdownlistItem Suécia
+
+PX_00059 - Check when hover over dropdownlistItem [Suécia]
+
+    [Keyword] - Hover over dropdownlistItem Suécia
+
+PX_00060 - Check when click on dropdownlistItem [EUA]
+
+    [Keyword] - Click on dropdownlistItem EUA
+
+PX_00061 - Check when hover over dropdownlistItem [EUA]
+
+    [Keyword] - Hover over dropdownlistItem EUA

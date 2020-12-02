@@ -94,6 +94,11 @@ Resource    ../resource/import.robot
     ${prop_val}=    Call Method       ${css}    value_of_css_property    ${attribute name}
     [Return]    ${prop_val}
 
+[Common] - Verify color of element
+    [Arguments]    ${locator}    ${prop_val}    ${color_expect}
+    ${element_color}=    [Common] - Get CSS Property Value    ${locator}        ${prop_val}
+    Should Be Equal    ${element_color}    ${color_expect}    Color is not as required
+
 [Common] - Scrolling page using JS executor
 # Scroll page till it reach a pixel number
     [Arguments]    ${scroll_height}
@@ -116,6 +121,28 @@ Resource    ../resource/import.robot
     ${ls1}    Create List    @{MyList}
     ${ls2}    Create List    @{list_color}
     Lists Should Be Equal    ${ls1}      ${ls2}         2
+
+[Common] - Check page contains element text
+    [Arguments]  ${element_text}
+    wait until page contains    ${element_text}     20
+
+[Common] - Verify it redirects to page
+    [Arguments]  ${page_title}
+    [Common] - Check page contains element text  ${page_title}
+
+[Common] - Verify dropdownlist contain options
+    [Arguments]  ${dropdown_item_loc}  @{expect_options}
+    wait until keyword succeeds    20s     2s    page should contain element    ${dropdown_item_loc}
+    @{list_elements}    Get WebElements    ${dropdown_item_loc}
+    @{default_options}    Create List      
+    FOR    ${element}    IN    @{list_elements}
+    ${text_option}     get text   ${element}
+    Append To List    ${default_options}    ${text_option}
+    END
+    ${list_1}    Create List    @{default_options}
+    ${list_2}    Create List    @{expect_options}
+    Lists Should Be Equal   ${list_1}      ${list_2}         The dropdown list does not have enough options
+
 Get attribute
 
     [Common] - Get CSS Property Value   //ul[@class='plan-feature']//li[1]//span[@class='option-mark']     background-color 
