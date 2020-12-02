@@ -92,13 +92,30 @@ Resource    ../resource/import.robot
     [Arguments]    ${locator}    ${attribute name}
     ${css}=         Get WebElement    ${locator}
     ${prop_val}=    Call Method       ${css}    value_of_css_property    ${attribute name}
-    Log to console    ----------------${prop_val}
+    [Return]    ${prop_val}
 
 [Common] - Scrolling page using JS executor
 # Scroll page till it reach a pixel number
     [Arguments]    ${scroll_height}
     execute javascript    window.scrollTo(0,${scroll_height})
 
+[Common] - Verify element should contain text
+    [Arguments]    ${element_loc}    ${text}
+    wait until keyword succeeds    10s     1s    Element Should Contain    ${element_loc}    ${text}
+
+[Common] - Compare 2 lists with each other
+    [Arguments]    @{list_elements}
+    @{list_elements}    Get WebElements    //ul[@class='plan-feature']//span[@class='option-mark']
+    @{MyList}    Create List      
+    FOR    ${i}    IN    @{list_elements}
+    ${css}=         Get WebElement    ${i}
+    ${prop_val}=    Call Method       ${css}    value_of_css_property    background-color
+    Append To List    ${MyList}    ${prop_val}
+    END
+    @{list_color}    create list    rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)
+    ${ls1}    Create List    @{MyList}
+    ${ls2}    Create List    @{list_color}
+    Lists Should Be Equal    ${ls1}      ${ls2}         2
 Get attribute
 
     [Common] - Get CSS Property Value   //ul[@class='plan-feature']//li[1]//span[@class='option-mark']     background-color 

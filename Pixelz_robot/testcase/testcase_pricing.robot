@@ -15,6 +15,8 @@ PX_00077 - Check when select label [Solo], radiobutton [payment_monthly], and va
 
 PX_00078 - Check when select label [Solo], radiobutton [payment_monthly], and value="CAD" of dropdownlist [Currency] at the same time
 
+    [Common] - Compare 2 lists with each other
+
 PX_00079 - Check when select label [Solo], radiobutton [payment_monthly], and value="GBP" of dropdownlist [Currency] at the same time
 
 PX_00080 - Check when select label [Solo], radiobutton [payment_monthly], and value="EUR" of dropdownlist [Currency] at the same time

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20201201 14:47:01.677" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20201201 18:13:20.428" rpa="false">
 <suite id="s1" name="Testcase Pricing" source="D:\Automation Testing\Exercise\Git\cicd_local_test\Pixelz_robot\testcase\testcase_pricing.robot">
-<test id="s1-t1" name="PX_00077 - Check when select label [Solo], radiobutton [payment_monthly], and value=&quot;USD&quot; of dropdownlist [Currency] at the same time">
+<test id="s1-t1" name="PX_00078 - Check when select label [Solo], radiobutton [payment_monthly], and value=&quot;CAD&quot; of dropdownlist [Currency] at the same time">
 <kw name="Run Keywords" library="BuiltIn" type="setup">
 <doc>Executes all the given keywords in a sequence.</doc>
 <arguments>
@@ -21,8 +21,8 @@
 <assign>
 <var>${browser}</var>
 </assign>
-<msg timestamp="20201201 14:47:01.856" level="INFO">${browser} = chrome</msg>
-<status status="PASS" starttime="20201201 14:47:01.856" endtime="20201201 14:47:01.856"></status>
+<msg timestamp="20201201 18:13:20.598" level="INFO">${browser} = chrome</msg>
+<status status="PASS" starttime="20201201 18:13:20.598" endtime="20201201 18:13:20.598"></status>
 </kw>
 <kw name="Convert To Boolean" library="BuiltIn">
 <doc>Converts the given item to Boolean true or false.</doc>
@@ -32,8 +32,8 @@
 <assign>
 <var>${true}</var>
 </assign>
-<msg timestamp="20201201 14:47:01.857" level="INFO">${true} = True</msg>
-<status status="PASS" starttime="20201201 14:47:01.856" endtime="20201201 14:47:01.857"></status>
+<msg timestamp="20201201 18:13:20.598" level="INFO">${true} = True</msg>
+<status status="PASS" starttime="20201201 18:13:20.598" endtime="20201201 18:13:20.598"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -48,8 +48,8 @@
 <assign>
 <var>${list_options}</var>
 </assign>
-<msg timestamp="20201201 14:47:01.857" level="INFO">${list_options} = ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security', '--disable-impl-side-painting', '--enable-features=NetworkService,NetworkServiceInProcess']</msg>
-<status status="PASS" starttime="20201201 14:47:01.857" endtime="20201201 14:47:01.857"></status>
+<msg timestamp="20201201 18:13:20.598" level="INFO">${list_options} = ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security', '--disable-impl-side-painting', '--enable-features=NetworkService,NetworkServiceInProcess']</msg>
+<status status="PASS" starttime="20201201 18:13:20.598" endtime="20201201 18:13:20.598"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -59,8 +59,8 @@
 <assign>
 <var>${args}</var>
 </assign>
-<msg timestamp="20201201 14:47:01.857" level="INFO">${args} = {'args': ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security', '--disable-impl-side-painting', '--enable-features=NetworkService,NetworkServiceInProcess']}</msg>
-<status status="PASS" starttime="20201201 14:47:01.857" endtime="20201201 14:47:01.857"></status>
+<msg timestamp="20201201 18:13:20.610" level="INFO">${args} = {'args': ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security', '--disable-impl-side-painting', '--enable-features=NetworkService,NetworkServiceInProcess']}</msg>
+<status status="PASS" starttime="20201201 18:13:20.599" endtime="20201201 18:13:20.610"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -73,8 +73,8 @@
 <assign>
 <var>${desired_capabilities}</var>
 </assign>
-<msg timestamp="20201201 14:47:01.858" level="INFO">${desired_capabilities} = {'acceptSslCerts': True, 'acceptInsecureCerts': True, 'ignore-certificate-errors': True, 'chromeOptions': {'args': ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security...</msg>
-<status status="PASS" starttime="20201201 14:47:01.857" endtime="20201201 14:47:01.858"></status>
+<msg timestamp="20201201 18:13:20.610" level="INFO">${desired_capabilities} = {'acceptSslCerts': True, 'acceptInsecureCerts': True, 'ignore-certificate-errors': True, 'chromeOptions': {'args': ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security...</msg>
+<status status="PASS" starttime="20201201 18:13:20.610" endtime="20201201 18:13:20.610"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -114,8 +114,8 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20201201 14:47:01.859" level="INFO">Opening browser 'chrome' to base url 'https://www.pixelz.com/'.</msg>
-<status status="PASS" starttime="20201201 14:47:01.858" endtime="20201201 14:47:05.891"></status>
+<msg timestamp="20201201 18:13:20.611" level="INFO">Opening browser 'chrome' to base url 'https://www.pixelz.com/'.</msg>
+<status status="PASS" starttime="20201201 18:13:20.611" endtime="20201201 18:13:24.678"></status>
 </kw>
 <kw name="[Common] - Maximize browser size to fit screen" library="web_common">
 <kw name="Set Window Position" library="SeleniumLibrary">
@@ -124,7 +124,7 @@
 <arg>0</arg>
 <arg>0</arg>
 </arguments>
-<status status="PASS" starttime="20201201 14:47:05.891" endtime="20201201 14:47:08.001"></status>
+<status status="PASS" starttime="20201201 18:13:24.678" endtime="20201201 18:13:26.799"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -132,39 +132,39 @@
 <arg>1920</arg>
 <arg>1080</arg>
 </arguments>
-<status status="PASS" starttime="20201201 14:47:08.001" endtime="20201201 14:47:08.171"></status>
+<status status="PASS" starttime="20201201 18:13:26.800" endtime="20201201 18:13:26.931"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:05.891" endtime="20201201 14:47:08.171"></status>
+<status status="PASS" starttime="20201201 18:13:24.678" endtime="20201201 18:13:26.931"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:01.858" endtime="20201201 14:47:08.171"></status>
+<status status="PASS" starttime="20201201 18:13:20.611" endtime="20201201 18:13:26.931"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:01.858" endtime="20201201 14:47:08.171"></status>
+<status status="PASS" starttime="20201201 18:13:20.610" endtime="20201201 18:13:26.931"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:01.856" endtime="20201201 14:47:08.172"></status>
+<status status="PASS" starttime="20201201 18:13:20.597" endtime="20201201 18:13:26.931"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201201 14:47:10.175" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:08.172" endtime="20201201 14:47:10.175"></status>
+<msg timestamp="20201201 18:13:28.932" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201201 18:13:26.931" endtime="20201201 18:13:28.932"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${accept_cookie}</arg>
 </arguments>
-<msg timestamp="20201201 14:47:10.175" level="INFO">Clicking element '//a[@id='hs-eu-confirmation-button']'.</msg>
-<status status="PASS" starttime="20201201 14:47:10.175" endtime="20201201 14:47:10.225"></status>
+<msg timestamp="20201201 18:13:28.934" level="INFO">Clicking element '//a[@id='hs-eu-confirmation-button']'.</msg>
+<status status="PASS" starttime="20201201 18:13:28.933" endtime="20201201 18:13:29.032"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201201 14:47:12.228" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:10.226" endtime="20201201 14:47:12.228"></status>
+<msg timestamp="20201201 18:13:31.035" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201201 18:13:29.032" endtime="20201201 18:13:31.035"></status>
 </kw>
 <kw name="[Common] - Click element" library="web_common">
 <arguments>
@@ -187,27 +187,27 @@
 <arg>timeout=10s</arg>
 <arg>error=Could not find ${element_loc} element.</arg>
 </arguments>
-<status status="PASS" starttime="20201201 14:47:12.229" endtime="20201201 14:47:12.275"></status>
+<status status="PASS" starttime="20201201 18:13:31.035" endtime="20201201 18:13:31.057"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:12.229" endtime="20201201 14:47:12.275"></status>
+<status status="PASS" starttime="20201201 18:13:31.035" endtime="20201201 18:13:31.057"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element_loc}</arg>
 </arguments>
-<msg timestamp="20201201 14:47:12.276" level="INFO">Clicking element '//i[@title='Dismiss']'.</msg>
-<status status="PASS" starttime="20201201 14:47:12.276" endtime="20201201 14:47:12.342"></status>
+<msg timestamp="20201201 18:13:31.057" level="INFO">Clicking element '//i[@title='Dismiss']'.</msg>
+<status status="PASS" starttime="20201201 18:13:31.057" endtime="20201201 18:13:31.088"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:12.228" endtime="20201201 14:47:12.343"></status>
+<status status="PASS" starttime="20201201 18:13:31.035" endtime="20201201 18:13:31.088"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201201 14:47:14.344" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:12.343" endtime="20201201 14:47:14.344"></status>
+<msg timestamp="20201201 18:13:33.089" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201201 18:13:31.088" endtime="20201201 18:13:33.089"></status>
 </kw>
 <kw name="[Common] - Mouse over element" library="web_common">
 <arguments>
@@ -230,27 +230,27 @@
 <arg>timeout=20s</arg>
 <arg>error=Could not find ${element_loc} element.</arg>
 </arguments>
-<status status="PASS" starttime="20201201 14:47:14.345" endtime="20201201 14:47:14.365"></status>
+<status status="PASS" starttime="20201201 18:13:33.089" endtime="20201201 18:13:33.111"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:14.344" endtime="20201201 14:47:14.365"></status>
+<status status="PASS" starttime="20201201 18:13:33.089" endtime="20201201 18:13:33.111"></status>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
 <arguments>
 <arg>${element_loc}</arg>
 </arguments>
-<msg timestamp="20201201 14:47:14.366" level="INFO">Simulating Mouse Over on element '//a[contains(.,'Location')]'.</msg>
-<status status="PASS" starttime="20201201 14:47:14.365" endtime="20201201 14:47:14.648"></status>
+<msg timestamp="20201201 18:13:33.111" level="INFO">Simulating Mouse Over on element '//a[contains(.,'Location')]'.</msg>
+<status status="PASS" starttime="20201201 18:13:33.111" endtime="20201201 18:13:33.384"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:14.344" endtime="20201201 14:47:14.649"></status>
+<status status="PASS" starttime="20201201 18:13:33.089" endtime="20201201 18:13:33.385"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201201 14:47:16.650" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:14.649" endtime="20201201 14:47:16.650"></status>
+<msg timestamp="20201201 18:13:35.388" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201201 18:13:33.385" endtime="20201201 18:13:35.388"></status>
 </kw>
 <kw name="[Common] - Click element" library="web_common">
 <arguments>
@@ -273,27 +273,27 @@
 <arg>timeout=10s</arg>
 <arg>error=Could not find ${element_loc} element.</arg>
 </arguments>
-<status status="PASS" starttime="20201201 14:47:16.653" endtime="20201201 14:47:16.714"></status>
+<status status="PASS" starttime="20201201 18:13:35.391" endtime="20201201 18:13:35.472"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:16.652" endtime="20201201 14:47:16.714"></status>
+<status status="PASS" starttime="20201201 18:13:35.390" endtime="20201201 18:13:35.473"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element_loc}</arg>
 </arguments>
-<msg timestamp="20201201 14:47:16.715" level="INFO">Clicking element '//a[contains(.,'Brasil')]'.</msg>
-<status status="PASS" starttime="20201201 14:47:16.715" endtime="20201201 14:47:21.056"></status>
+<msg timestamp="20201201 18:13:35.474" level="INFO">Clicking element '//a[contains(.,'Brasil')]'.</msg>
+<status status="PASS" starttime="20201201 18:13:35.473" endtime="20201201 18:13:38.095"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:16.651" endtime="20201201 14:47:21.056"></status>
+<status status="PASS" starttime="20201201 18:13:35.389" endtime="20201201 18:13:38.095"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201201 14:47:23.057" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:21.057" endtime="20201201 14:47:23.057"></status>
+<msg timestamp="20201201 18:13:40.097" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201201 18:13:38.096" endtime="20201201 18:13:40.097"></status>
 </kw>
 <kw name="[Common] - Click element" library="web_common">
 <arguments>
@@ -316,29 +316,29 @@
 <arg>timeout=10s</arg>
 <arg>error=Could not find ${element_loc} element.</arg>
 </arguments>
-<status status="PASS" starttime="20201201 14:47:23.060" endtime="20201201 14:47:23.127"></status>
+<status status="PASS" starttime="20201201 18:13:40.101" endtime="20201201 18:13:40.173"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:23.059" endtime="20201201 14:47:23.127"></status>
+<status status="PASS" starttime="20201201 18:13:40.099" endtime="20201201 18:13:40.173"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element_loc}</arg>
 </arguments>
-<msg timestamp="20201201 14:47:23.128" level="INFO">Clicking element '//i[@title='Dismiss']'.</msg>
-<status status="PASS" starttime="20201201 14:47:23.127" endtime="20201201 14:47:23.205"></status>
+<msg timestamp="20201201 18:13:40.174" level="INFO">Clicking element '//i[@title='Dismiss']'.</msg>
+<status status="PASS" starttime="20201201 18:13:40.173" endtime="20201201 18:13:40.227"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:23.058" endtime="20201201 14:47:23.206"></status>
+<status status="PASS" starttime="20201201 18:13:40.098" endtime="20201201 18:13:40.228"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201201 14:47:25.207" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:23.206" endtime="20201201 14:47:25.207"></status>
+<msg timestamp="20201201 18:13:42.229" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201201 18:13:40.228" endtime="20201201 18:13:42.229"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:01.856" endtime="20201201 14:47:25.208"></status>
+<status status="PASS" starttime="20201201 18:13:20.597" endtime="20201201 18:13:42.230"></status>
 </kw>
 <kw name="[Keyword] - Click on menu item pricing" library="keyword_header">
 <kw name="[Common] - Click element" library="web_common">
@@ -362,263 +362,857 @@
 <arg>timeout=10s</arg>
 <arg>error=Could not find ${element_loc} element.</arg>
 </arguments>
-<status status="PASS" starttime="20201201 14:47:25.210" endtime="20201201 14:47:25.275"></status>
+<status status="PASS" starttime="20201201 18:13:42.232" endtime="20201201 18:13:42.281"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:25.209" endtime="20201201 14:47:25.275"></status>
+<status status="PASS" starttime="20201201 18:13:42.232" endtime="20201201 18:13:42.282"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element_loc}</arg>
 </arguments>
-<msg timestamp="20201201 14:47:25.275" level="INFO">Clicking element '//a[contains(.,'Preços')]'.</msg>
-<status status="PASS" starttime="20201201 14:47:25.275" endtime="20201201 14:47:26.907"></status>
+<msg timestamp="20201201 18:13:42.282" level="INFO">Clicking element '//a[contains(.,'Preços')]'.</msg>
+<status status="PASS" starttime="20201201 18:13:42.282" endtime="20201201 18:13:43.260"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:25.208" endtime="20201201 14:47:26.908"></status>
+<status status="PASS" starttime="20201201 18:13:42.231" endtime="20201201 18:13:43.260"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>4</arg>
 </arguments>
-<msg timestamp="20201201 14:47:30.908" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:26.908" endtime="20201201 14:47:30.908"></status>
+<msg timestamp="20201201 18:13:47.263" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20201201 18:13:43.261" endtime="20201201 18:13:47.263"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:25.208" endtime="20201201 14:47:30.908"></status>
+<status status="PASS" starttime="20201201 18:13:42.230" endtime="20201201 18:13:47.263"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:01.856" endtime="20201201 14:47:30.908"></status>
+<status status="PASS" starttime="20201201 18:13:20.597" endtime="20201201 18:13:47.263"></status>
 </kw>
-<kw name="[Keyword] - Check data displayed with label Solo, radiobutton payment_monthly and currency USD" library="keyword_pricing">
-<kw name="[Common] - Scrolling page using JS executor" library="web_common">
+<kw name="[Common] - Compare 2 lists with each other" library="web_common">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
 <arguments>
-<arg>300</arg>
+<arg>//ul[@class='plan-feature']//span[@class='option-mark']</arg>
 </arguments>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<doc>Executes the given JavaScript code with possible arguments.</doc>
+<assign>
+<var>@{list_elements}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.280" level="INFO">@{list_elements} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="f0656ed1-d140-4b67-9b3c-abe140746a28")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
+<status status="PASS" starttime="20201201 18:13:47.264" endtime="20201201 18:13:47.280"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>@{MyList}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.280" level="INFO">@{MyList} = [ ]</msg>
+<status status="PASS" starttime="20201201 18:13:47.280" endtime="20201201 18:13:47.280"></status>
+</kw>
+<kw name="${i} IN [ @{list_elements} ]" type="for">
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;f0656ed1-d140-4b67-9b3c-abe140746a28&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
 <arguments>
-<arg>window.scrollTo(0,${scroll_height})</arg>
+<arg>${i}</arg>
 </arguments>
-<msg timestamp="20201201 14:47:30.911" level="INFO">Executing JavaScript:
-window.scrollTo(0,300)
-Without any arguments.</msg>
-<status status="PASS" starttime="20201201 14:47:30.910" endtime="20201201 14:47:30.938"></status>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.281" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="f0656ed1-d140-4b67-9b3c-abe140746a28")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.280" endtime="20201201 18:13:47.281"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:30.910" endtime="20201201 14:47:30.938"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
 <arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.288" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.281" endtime="20201201 18:13:47.288"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.288" endtime="20201201 18:13:47.289"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.280" endtime="20201201 18:13:47.289"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;767fb80d-fa29-44c6-9163-250b9057bdc1&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.289" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="767fb80d-fa29-44c6-9163-250b9057bdc1")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.289" endtime="20201201 18:13:47.289"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.298" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.289" endtime="20201201 18:13:47.298"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.298" endtime="20201201 18:13:47.299"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.289" endtime="20201201 18:13:47.299"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;c7a19f42-1a8b-4b41-adeb-ca4dad1515f2&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.299" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="c7a19f42-1a8b-4b41-adeb-ca4dad1515f2")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.299" endtime="20201201 18:13:47.299"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.308" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.299" endtime="20201201 18:13:47.308"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.308" endtime="20201201 18:13:47.309"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.299" endtime="20201201 18:13:47.309"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;270137d3-bf68-4eae-835a-5d351a133af4&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.309" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="270137d3-bf68-4eae-835a-5d351a133af4")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.309" endtime="20201201 18:13:47.309"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.317" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.309" endtime="20201201 18:13:47.317"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.318" endtime="20201201 18:13:47.318"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.309" endtime="20201201 18:13:47.318"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;e8442000-bae4-4d67-9944-3c1442b2d509&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.318" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="e8442000-bae4-4d67-9944-3c1442b2d509")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.318" endtime="20201201 18:13:47.318"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.329" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.318" endtime="20201201 18:13:47.329"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.329" endtime="20201201 18:13:47.329"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.318" endtime="20201201 18:13:47.329"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;10291f4c-26a5-4bac-a29a-15c419d88204&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.330" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="10291f4c-26a5-4bac-a29a-15c419d88204")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.329" endtime="20201201 18:13:47.330"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.336" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.330" endtime="20201201 18:13:47.336"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.337" endtime="20201201 18:13:47.337"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.329" endtime="20201201 18:13:47.337"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;e1b74721-0383-4019-985b-5996d5dec8de&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.337" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="e1b74721-0383-4019-985b-5996d5dec8de")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.337" endtime="20201201 18:13:47.337"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.348" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.337" endtime="20201201 18:13:47.348"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.348" endtime="20201201 18:13:47.349"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.337" endtime="20201201 18:13:47.349"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;e9842726-40fb-4e6f-b574-d4b4cec5c6ad&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.349" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="e9842726-40fb-4e6f-b574-d4b4cec5c6ad")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.349" endtime="20201201 18:13:47.349"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.359" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.349" endtime="20201201 18:13:47.359"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.359" endtime="20201201 18:13:47.359"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.349" endtime="20201201 18:13:47.359"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;2931d12e-2426-4684-8aa6-82de3fdd5d35&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.360" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="2931d12e-2426-4684-8aa6-82de3fdd5d35")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.360" endtime="20201201 18:13:47.360"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.367" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.360" endtime="20201201 18:13:47.367"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.367" endtime="20201201 18:13:47.367"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.359" endtime="20201201 18:13:47.367"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;cd16c8a9-92b4-4be1-9f9e-e0336f87c8f6&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.368" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="cd16c8a9-92b4-4be1-9f9e-e0336f87c8f6")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.367" endtime="20201201 18:13:47.368"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.378" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.368" endtime="20201201 18:13:47.378"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.378" endtime="20201201 18:13:47.378"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.367" endtime="20201201 18:13:47.378"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;3071fdf0-c985-4aa8-bd33-dfdbec4fb400&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.378" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="3071fdf0-c985-4aa8-bd33-dfdbec4fb400")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.378" endtime="20201201 18:13:47.378"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.385" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.379" endtime="20201201 18:13:47.385"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.385" endtime="20201201 18:13:47.385"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.378" endtime="20201201 18:13:47.385"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;21e6f7b2-6fdb-42d8-8d6b-ce4ee44266b1&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.386" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="21e6f7b2-6fdb-42d8-8d6b-ce4ee44266b1")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.385" endtime="20201201 18:13:47.386"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.395" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.386" endtime="20201201 18:13:47.395"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.396" endtime="20201201 18:13:47.396"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.385" endtime="20201201 18:13:47.396"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;cb04c374-5e04-4ab1-ad96-1e58baa982c2&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.396" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="cb04c374-5e04-4ab1-ad96-1e58baa982c2")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.396" endtime="20201201 18:13:47.396"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.402" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.396" endtime="20201201 18:13:47.402"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.402" endtime="20201201 18:13:47.402"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.396" endtime="20201201 18:13:47.402"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;a2a7d24d-7c58-4fed-a3b6-404ced2c55cf&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.403" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="a2a7d24d-7c58-4fed-a3b6-404ced2c55cf")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.403" endtime="20201201 18:13:47.403"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.412" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.403" endtime="20201201 18:13:47.412"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.412" endtime="20201201 18:13:47.413"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.402" endtime="20201201 18:13:47.413"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;d739c11e-1fa4-496f-9e84-15767d03d9a7&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.413" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="d739c11e-1fa4-496f-9e84-15767d03d9a7")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.413" endtime="20201201 18:13:47.413"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.419" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.413" endtime="20201201 18:13:47.419"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.419" endtime="20201201 18:13:47.420"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.413" endtime="20201201 18:13:47.420"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;b747a343-fdd3-43d4-aa9d-e223bf44dbab&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.420" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="b747a343-fdd3-43d4-aa9d-e223bf44dbab")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.420" endtime="20201201 18:13:47.420"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.429" level="INFO">${prop_val} = rgba(146, 195, 106, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.420" endtime="20201201 18:13:47.429"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.429" endtime="20201201 18:13:47.429"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.420" endtime="20201201 18:13:47.430"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;ad7f5101-f75c-4710-94bf-8d661dae9f38&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.430" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="ad7f5101-f75c-4710-94bf-8d661dae9f38")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.430" endtime="20201201 18:13:47.430"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.436" level="INFO">${prop_val} = rgba(218, 218, 218, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.430" endtime="20201201 18:13:47.436"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.436" endtime="20201201 18:13:47.437"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.430" endtime="20201201 18:13:47.437"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;e939b697-b78a-4486-ab8a-7e859e7736eb&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.437" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="e939b697-b78a-4486-ab8a-7e859e7736eb")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.437" endtime="20201201 18:13:47.437"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.447" level="INFO">${prop_val} = rgba(218, 218, 218, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.437" endtime="20201201 18:13:47.447"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.447" endtime="20201201 18:13:47.447"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.437" endtime="20201201 18:13:47.447"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;6d4c5474-7a30-4605-b69d-4d8c4c10d668&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.448" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="6d4c5474-7a30-4605-b69d-4d8c4c10d668")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.448" endtime="20201201 18:13:47.448"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.454" level="INFO">${prop_val} = rgba(218, 218, 218, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.448" endtime="20201201 18:13:47.454"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.454" endtime="20201201 18:13:47.455"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.447" endtime="20201201 18:13:47.455"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;a54b158b-bda8-4838-84ab-8926a9ce9ec9&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.455" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="a54b158b-bda8-4838-84ab-8926a9ce9ec9")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.455" endtime="20201201 18:13:47.455"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.464" level="INFO">${prop_val} = rgba(218, 218, 218, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.455" endtime="20201201 18:13:47.464"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.464" endtime="20201201 18:13:47.464"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.455" endtime="20201201 18:13:47.464"></status>
+</kw>
+<kw name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;752613ec494ceaae3d33dc35dc36c0cb&quot;, element=&quot;e85878c5-1e2f-49fd-b384-efed8d29a143&quot;)&gt;" type="foritem">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${css}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.464" level="INFO">${css} = &lt;selenium.webdriver.remote.webelement.WebElement (session="752613ec494ceaae3d33dc35dc36c0cb", element="e85878c5-1e2f-49fd-b384-efed8d29a143")&gt;</msg>
+<status status="PASS" starttime="20201201 18:13:47.464" endtime="20201201 18:13:47.464"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${css}</arg>
+<arg>value_of_css_property</arg>
+<arg>background-color</arg>
+</arguments>
+<assign>
+<var>${prop_val}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.470" level="INFO">${prop_val} = rgba(218, 218, 218, 1)</msg>
+<status status="PASS" starttime="20201201 18:13:47.464" endtime="20201201 18:13:47.470"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MyList}</arg>
+<arg>${prop_val}</arg>
+</arguments>
+<status status="PASS" starttime="20201201 18:13:47.471" endtime="20201201 18:13:47.471"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.464" endtime="20201201 18:13:47.471"></status>
+</kw>
+<status status="PASS" starttime="20201201 18:13:47.280" endtime="20201201 18:13:47.471"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(146, 195, 106, 1)</arg>
+<arg>rgba(218, 218, 218, 1)</arg>
+<arg>rgba(218, 218, 218, 1)</arg>
+<arg>rgba(218, 218, 218, 1)</arg>
+<arg>rgba(218, 218, 218, 1)</arg>
+<arg>rgba(218, 218, 218, 1)</arg>
+</arguments>
+<assign>
+<var>@{list_color}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.471" level="INFO">@{list_color} = [ rgba(146, 195, 106, 1) | rgba(146, 195, 106, 1) | rgba(146, 195, 106, 1) | rgba(146, 195, 106, 1) | rgba(146, 195, 106, 1) | rgba(146, 195, 106, 1) | rgba(146, 195, 106, 1) | rgba(146, 195, 106, 1) ...</msg>
+<status status="PASS" starttime="20201201 18:13:47.471" endtime="20201201 18:13:47.471"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>@{MyList}</arg>
+</arguments>
+<assign>
+<var>${ls1}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.471" level="INFO">${ls1} = ['rgba(146, 195, 106, 1)', 'rgba(146, 195, 106, 1)', 'rgba(146, 195, 106, 1)', 'rgba(146, 195, 106, 1)', 'rgba(146, 195, 106, 1)', 'rgba(146, 195, 106, 1)', 'rgba(146, 195, 106, 1)', 'rgba(146, 195, 1...</msg>
+<status status="PASS" starttime="20201201 18:13:47.471" endtime="20201201 18:13:47.471"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>@{list_color}</arg>
+</arguments>
+<assign>
+<var>${ls2}</var>
+</assign>
+<msg timestamp="20201201 18:13:47.472" level="INFO">${ls2} = ['rgba(146, 195, 106, 1)', 'rgba(146, 195, 106, 1)', 'rgba(146, 195, 106, 1)', 'rgba(146, 195, 106, 1)', 'rgba(146, 195, 106, 1)', 'rgba(146, 195, 106, 1)', 'rgba(146, 195, 106, 1)', 'rgba(146, 195, 1...</msg>
+<status status="PASS" starttime="20201201 18:13:47.472" endtime="20201201 18:13:47.472"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${ls1}</arg>
+<arg>${ls2}</arg>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201201 14:47:32.940" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:30.939" endtime="20201201 14:47:32.940"></status>
+<status status="PASS" starttime="20201201 18:13:47.472" endtime="20201201 18:13:47.472"></status>
 </kw>
-<kw name="[Common] - Click element" library="web_common">
-<arguments>
-<arg>${btn_close_professional_imagepricefrom}</arg>
-</arguments>
-<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<arguments>
-<arg>5s</arg>
-<arg>1s</arg>
-<arg>Wait Until Element Is Visible</arg>
-<arg>${element_loc}</arg>
-<arg>timeout=10s</arg>
-<arg>error=Could not find ${element_loc} element.</arg>
-</arguments>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>${element_loc}</arg>
-<arg>timeout=10s</arg>
-<arg>error=Could not find ${element_loc} element.</arg>
-</arguments>
-<status status="PASS" starttime="20201201 14:47:32.944" endtime="20201201 14:47:33.004"></status>
+<status status="PASS" starttime="20201201 18:13:47.264" endtime="20201201 18:13:47.472"></status>
 </kw>
-<status status="PASS" starttime="20201201 14:47:32.942" endtime="20201201 14:47:33.004"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${element_loc}</arg>
-</arguments>
-<msg timestamp="20201201 14:47:33.005" level="INFO">Clicking element '//h2[contains(.,'PROFESSIONAL')]//parent::div//a[@class='btn-close']'.</msg>
-<status status="PASS" starttime="20201201 14:47:33.004" endtime="20201201 14:47:33.070"></status>
-</kw>
-<status status="PASS" starttime="20201201 14:47:32.941" endtime="20201201 14:47:33.070"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20201201 14:47:35.071" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:33.070" endtime="20201201 14:47:35.071"></status>
-</kw>
-<kw name="[Common] - Click element" library="web_common">
-<arguments>
-<arg>${label_solo}</arg>
-</arguments>
-<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<arguments>
-<arg>5s</arg>
-<arg>1s</arg>
-<arg>Wait Until Element Is Visible</arg>
-<arg>${element_loc}</arg>
-<arg>timeout=10s</arg>
-<arg>error=Could not find ${element_loc} element.</arg>
-</arguments>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>${element_loc}</arg>
-<arg>timeout=10s</arg>
-<arg>error=Could not find ${element_loc} element.</arg>
-</arguments>
-<status status="PASS" starttime="20201201 14:47:35.072" endtime="20201201 14:47:35.090"></status>
-</kw>
-<status status="PASS" starttime="20201201 14:47:35.071" endtime="20201201 14:47:35.090"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${element_loc}</arg>
-</arguments>
-<msg timestamp="20201201 14:47:35.091" level="INFO">Clicking element '//label[@for='input-plan-solo']'.</msg>
-<status status="PASS" starttime="20201201 14:47:35.091" endtime="20201201 14:47:35.140"></status>
-</kw>
-<status status="PASS" starttime="20201201 14:47:35.071" endtime="20201201 14:47:35.140"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20201201 14:47:37.143" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:35.140" endtime="20201201 14:47:37.143"></status>
-</kw>
-<kw name="[Common] - Click element" library="web_common">
-<arguments>
-<arg>${radiobtn_payment_monthly}</arg>
-</arguments>
-<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<arguments>
-<arg>5s</arg>
-<arg>1s</arg>
-<arg>Wait Until Element Is Visible</arg>
-<arg>${element_loc}</arg>
-<arg>timeout=10s</arg>
-<arg>error=Could not find ${element_loc} element.</arg>
-</arguments>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>${element_loc}</arg>
-<arg>timeout=10s</arg>
-<arg>error=Could not find ${element_loc} element.</arg>
-</arguments>
-<status status="PASS" starttime="20201201 14:47:37.144" endtime="20201201 14:47:37.168"></status>
-</kw>
-<status status="PASS" starttime="20201201 14:47:37.143" endtime="20201201 14:47:37.169"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${element_loc}</arg>
-</arguments>
-<msg timestamp="20201201 14:47:37.169" level="INFO">Clicking element '//label[@for='payment_monthly']'.</msg>
-<status status="PASS" starttime="20201201 14:47:37.169" endtime="20201201 14:47:37.210"></status>
-</kw>
-<status status="PASS" starttime="20201201 14:47:37.143" endtime="20201201 14:47:37.211"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20201201 14:47:39.212" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:37.211" endtime="20201201 14:47:39.212"></status>
-</kw>
-<kw name="[Common] - Select label of dropdownlist by label" library="web_common">
-<arguments>
-<arg>${ddlist_currency}</arg>
-<arg>USD</arg>
-</arguments>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<arguments>
-<arg>${dropdownlist_xpath}</arg>
-<arg>${label}</arg>
-</arguments>
-<msg timestamp="20201201 14:47:39.213" level="INFO">Selecting options from selection list '//select[@id='currency']' by label USD.</msg>
-<status status="PASS" starttime="20201201 14:47:39.213" endtime="20201201 14:47:39.283"></status>
-</kw>
-<status status="PASS" starttime="20201201 14:47:39.212" endtime="20201201 14:47:39.284"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20201201 14:47:41.286" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:39.284" endtime="20201201 14:47:41.286"></status>
-</kw>
-<kw name="[Common] - Select label of dropdownlist by label" library="web_common">
-<arguments>
-<arg>${ddlist_currency}</arg>
-<arg>CAD</arg>
-</arguments>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<arguments>
-<arg>${dropdownlist_xpath}</arg>
-<arg>${label}</arg>
-</arguments>
-<msg timestamp="20201201 14:47:41.288" level="INFO">Selecting options from selection list '//select[@id='currency']' by label CAD.</msg>
-<status status="PASS" starttime="20201201 14:47:41.288" endtime="20201201 14:47:41.466"></status>
-</kw>
-<status status="PASS" starttime="20201201 14:47:41.287" endtime="20201201 14:47:41.466"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20201201 14:47:43.469" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:41.466" endtime="20201201 14:47:43.469"></status>
-</kw>
-<kw name="[Common] - Select label of dropdownlist by label" library="web_common">
-<arguments>
-<arg>${ddlist_currency}</arg>
-<arg>USD</arg>
-</arguments>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<arguments>
-<arg>${dropdownlist_xpath}</arg>
-<arg>${label}</arg>
-</arguments>
-<msg timestamp="20201201 14:47:43.473" level="INFO">Selecting options from selection list '//select[@id='currency']' by label USD.</msg>
-<status status="PASS" starttime="20201201 14:47:43.472" endtime="20201201 14:47:43.690"></status>
-</kw>
-<status status="PASS" starttime="20201201 14:47:43.470" endtime="20201201 14:47:43.690"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20201201 14:47:45.692" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201201 14:47:43.690" endtime="20201201 14:47:45.692"></status>
-</kw>
-<status status="PASS" starttime="20201201 14:47:30.909" endtime="20201201 14:47:45.693"></status>
-</kw>
-<status status="PASS" starttime="20201201 14:47:01.855" endtime="20201201 14:47:45.694" critical="yes"></status>
+<status status="PASS" starttime="20201201 18:13:20.596" endtime="20201201 18:13:47.472" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20201201 14:47:01.680" endtime="20201201 14:47:45.708"></status>
+<status status="PASS" starttime="20201201 18:13:20.429" endtime="20201201 18:13:47.474"></status>
 </suite>
 <statistics>
 <total>

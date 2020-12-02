@@ -128,7 +128,7 @@ Resource    ../resource/import.robot
     [Common] - Mouse over element    ${dropdownlist_resource}
     sleep                            2
     [Common] - Click element         ${dropdownlistItem_casestudy}
-    sleep                            4                           
+    sleep                            4                                
 
 [Keyword] - Check element has value "BLOG"
 

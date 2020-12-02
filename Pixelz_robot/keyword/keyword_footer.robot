@@ -6,11 +6,11 @@ Resource    ../resource/import.robot
 *** Keywords ***
 
 [Keyword] - Scroll page till go to bottom
-    
+
     execute javascript    window.scrollTo(0,document.body.scrollHeight)
-    sleep    1
+    sleep                 1
     execute javascript    window.scrollTo(0,document.body.scrollHeight)
-    sleep    3
+    sleep                 3
 
 [Keyword] - Click on button facebook
 
