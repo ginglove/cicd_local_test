@@ -680,3 +680,225 @@ PX_00101
     [KW_116] - CLick Element Common        css=div.recent-activity-controls > a
     Go Back
     [KW_116] - CLick Element Common        css=#Embed > div > div > button
+
+PX_00133
+    [Setup]         Open Browser     https://fr.pixelz.com/      ${browser}
+    Click Element           ${Popup_btn_Accept}
+    Sleep       3s
+    [KW_113] - Hover on Element and click to that element           css=div.module-group.right > div:nth-child(1) > ul > li:nth-child(5) > a            css=div:nth-child(1) > ul > li:nth-child(5) > ul > li:nth-child(5) > a
+
+PX_00134
+    [Setup]         Open Browser     https://fr.pixelz.com/partners/      ${browser}
+    Click Element           ${Popup_btn_Accept}
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(1) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(2) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(3) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(4) > div > div > a
+
+
+PX_00138
+    [Setup]         Open Browser     https://fr.pixelz.com/partners/      ${browser}
+    Click Element           ${Popup_btn_Accept}
+    Sleep       3s
+    [KW_114] - Scroll Page To Location Common           0    500
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(5) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(6) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(7) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(8) > div > div > a
+
+
+PX_00142
+    [Setup]         Open Browser     https://fr.pixelz.com/partners/      ${browser}
+    Click Element           ${Popup_btn_Accept}
+    Sleep       3s
+    [KW_114] - Scroll Page To Location Common           0    750
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(9) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(10) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(11) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(12) > div > div > a
+
+
+PX_00146
+    [Setup]         Open Browser     https://fr.pixelz.com/partners/      ${browser}
+    Click Element           ${Popup_btn_Accept}
+    Sleep       3s
+    [KW_114] - Scroll Page To Location Common           0    750
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(13) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(14) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(15) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(16) > div > div > a
+
+
+PX_00150
+    [Setup]         Open Browser     https://fr.pixelz.com/partners/      ${browser}
+    Click Element           ${Popup_btn_Accept}
+    Sleep       3s
+    [KW_114] - Scroll Page To Location Common           0    1000
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(17) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(18) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(19) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(20) > div > div > a
+
+
+PX_00154
+    [Setup]         Open Browser     https://fr.pixelz.com/partners/      ${browser}
+    Click Element           ${Popup_btn_Accept}
+    Sleep       3s
+    [KW_114] - Scroll Page To Location Common           0    1000
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(21) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(21) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(23) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(24) > div > div > a
+
+
+PX_00158
+    [Setup]         Open Browser     https://fr.pixelz.com/partners/      ${browser}
+    Click Element           ${Popup_btn_Accept}
+    Sleep       3s
+    [KW_114] - Scroll Page To Location Common           0    1500
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(25) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(26) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(27) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(28) > div > div > a
+    Go Back
+    [KW_116] - CLick Element Common        css=div.row.masonry.masonryFlyIn.fadeIn > div:nth-child(29) > div > div > a
+
+
+
+
+
+#Check when click on "Questions fréquentes" of "RESSOURCES"
+#Check click on "Posez vos questions" textlink
+#...
+# From PX_00163 to PX_00182
+PX_00163
+    [Setup]         Open Browser     https://fr.pixelz.com/      ${browser}
+    Click Element           ${Popup_btn_Accept}
+    Sleep       3s
+    [KW_113] - Hover on Element and click to that element           css=div.module-group.right > div:nth-child(1) > ul > li:nth-child(5) > a            css=div:nth-child(1) > ul > li:nth-child(5) > ul > li:nth-child(7) > a
+
+PX_00164
+    [Setup]         Open Browser     https://fr.pixelz.com/faq/      ${browser}
+    Click Element           ${Popup_btn_Accept}
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=div > div > ul > li:nth-child(1) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(2) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(3) > div.title > h4
+    Sleep       3s
+    [KW_114] - Scroll Page To Location Common           0    500
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(4) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(5) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(6) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(7) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(8) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(9) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(10) > div.title > h4
+     Sleep       3s
+    [KW_114] - Scroll Page To Location Common           0    1200
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(11) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(12) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(13) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(14) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(15) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(16) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(17) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(18) > div.title > h4
+    [KW_116] - CLick Element Common        css=div > ul > li:nth-child(19) > div.title > h4
+
+
+
+
+
+
+
+#"DOCUMENTATION API" sub-resources
+#Check when click on ""Developer API"" of "RESSOURCES"
+#
+PX_00183
+    [Setup]         Open Browser     https://fr.pixelz.com/      ${browser}
+    Click Element           ${Popup_btn_Accept}
+    Sleep       3s
+    [KW_113] - Hover on Element and click to that element           css=div.module-group.right > div:nth-child(1) > ul > li:nth-child(5) > a            css=div:nth-child(1) > ul > li:nth-child(5) > ul > li:nth-child(6) > a
+
+
+#From PX_00184 to PX_00198
+PX_00184
+    [Setup]         Open Browser     https://docs.pixelz.com/?_ga=2.240228931.1171119287.1606729896-2021375772.1606123619      ${browser}
+#    Click Element           ${Popup_btn_Accept}
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-48 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-49 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-54 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-55 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-56 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-57 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-58 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-59 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-60 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-61 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-62 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-63 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-64 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-65 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+    [KW_116] - CLick Element Common        css=#menu-item-66 > a
+    [KW_114] - Scroll Page To Location Common           0    0
+    Sleep       3s
+
