@@ -30,7 +30,7 @@ Resource    ../resource/import.robot
 
     [Common] - Click element                  ${logo}
     sleep                                     4
-    [Common] - Verify it redirects to page    ${title_page}
+    [Common] - Verify it redirects to page    ${title_homepage}
     sleep                                     1
 
 [Keyword] - Click on menu item Home
