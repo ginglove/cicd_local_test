@@ -263,7 +263,7 @@ Resource    ../resource/import.robot
     sleep                                 2
     [Common] - Mouse over element         ${dropdownlistItem_faq}
     sleep                                 2
-    [Common] - Verify color of element    ${dropdownlistItem_faq}    color    rgba(146, 195, 106, 1)
+    [Common] - Verify color of element    ${dropdownlistItem_faq}     color    rgba(146, 195, 106, 1)
     sleep                                 1
 
 [Keyword] - Hover over dropdownlist Sobre Nós
@@ -289,6 +289,7 @@ Resource    ../resource/import.robot
     [Common] - Mouse over element         ${dropdownlistItem_origin}
     sleep                                 2
     [Common] - Verify color of element    ${dropdownlistItem_origin}    color    rgba(146, 195, 106, 1)
+    sleep                                 1
 
 [Keyword] - Click on dropdownlistItem Responsabilidade Social Corporativa
 
@@ -306,7 +307,7 @@ Resource    ../resource/import.robot
     [Common] - Mouse over element         ${dropdownlistItem_csr}
     sleep                                 2
     [Common] - Verify color of element    ${dropdownlistItem_csr}    color    rgba(146, 195, 106, 1)
-
+    sleep                                 1
 [Keyword] - Click on button Login
 
     [Common] - Click element                  ${btn_login}
@@ -316,7 +317,10 @@ Resource    ../resource/import.robot
 
 [Keyword] - Hover over dropdownlistItem Login
 
-
+    [Common] - Mouse over element         ${btn_login}
+    sleep                                 4
+    [Common] - Verify color of element    ${btn_login}    background-color    rgba(255, 255, 255, 0.3)
+    sleep                                 1
 
 [Keyword] - Click on button Inscreva-se
 
@@ -327,102 +331,219 @@ Resource    ../resource/import.robot
 
 [Keyword] - Hover over button Inscreva-se
 
+    [Common] - Mouse over element         ${btn_signup}
+    sleep                                 4
+    [Common] - Verify color of element    ${btn_signup}    background-color    rgba(255, 255, 255, 1)
+    sleep                                 1
 
+[Keyword] - Hover over dropdownlist Localização
 
+    [Common] - Mouse over element                     ${menuitem_location}
+    sleep                                             2
+    [Common] - Verify dropdownlist contain options    ${menuitem_location_all}    @{menuitem_location_all_expect}
+    sleep                                             1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Keyword] - Hover over dropdownlist location
-
-    [Common] - Mouse over element    ${menuitem_location}
-    sleep                            2
-
-Keyword] - Click on dropdownlistItem portuguese
+[Keyword] - Click on dropdownlistItem Padrão
 
     [Common] - Mouse over element    ${menuitem_location}
     sleep                            2
     [Common] - Click element         ${location_portuguese}
     sleep                            4
+    [Common] - Verify url            ${url_portuguese}
+    sleep                            1
 
-[Keyword] - Click on dropdownlistItem brasil
+[Keyword] - Hover over dropdownlistItem Padrão
+
+    [Common] - Mouse over element         ${menuitem_location}
+    sleep                                 2
+    [Common] - Mouse over element         ${location_portuguese}
+    sleep                                 2
+    [Common] - Verify color of element    ${location_portuguese}    color    rgba(146, 195, 106, 1)
+    sleep                                 1
+
+[Keyword] - Click on dropdownlistItem Brasil
 
     [Common] - Mouse over element    ${menuitem_location}
     sleep                            2
     [Common] - Click element         ${location_brasil}
     sleep                            4
+    [Common] - Verify url            ${url_brasil}
+    sleep                            1
 
-[Keyword] - Click on dropdownlistItem denmark
+[Keyword] - Hover over dropdownlistItem Brasil
+
+    [Common] - Mouse over element         ${menuitem_location}
+    sleep                                 2
+    [Common] - Mouse over element         ${location_brasil}
+    sleep                                 2
+    [Common] - Verify color of element    ${location_brasil}      color    rgba(146, 195, 106, 1)
+    sleep                                 1
+
+[Keyword] - Click on dropdownlistItem Dinamarca
 
     [Common] - Mouse over element    ${menuitem_location}
     sleep                            2
-    [Common] - Click element         ${location_denmark}
+    [Common] - Click element         ${location_brasil}
     sleep                            4
+    [Common] - Verify url            ${url_brasil}
+    sleep                            1
 
-[Keyword] - Click on dropdownlistItem deutschland
+[Keyword] - Hover over dropdownlistItem Dinamarca
+
+    [Common] - Mouse over element         ${menuitem_location}
+    sleep                                 2
+    [Common] - Mouse over element         ${location_denmark}
+    sleep                                 2
+    [Common] - Verify color of element    ${location_denmark}     color    rgba(146, 195, 106, 1)
+    sleep                                 1
+
+
+[Keyword] - Click on dropdownlistItem Alemanha
 
     [Common] - Mouse over element    ${menuitem_location}
     sleep                            2
     [Common] - Click element         ${location_deutschland}
     sleep                            4
+    [Common] - Verify url            ${url_deutschland}
+    sleep                            1
 
-[Keyword] - Click on dropdownlistItem españa
+[Keyword] - Hover over dropdownlistItem Alemanha
+
+    [Common] - Mouse over element         ${menuitem_location}
+    sleep                                 2
+    [Common] - Mouse over element         ${location_deutschland}
+    sleep                                 2
+    [Common] - Verify color of element    ${location_deutschland}    color    rgba(146, 195, 106, 1)
+    sleep                                 1
+
+[Keyword] - Click on dropdownlistItem Espanha
 
     [Common] - Mouse over element    ${menuitem_location}
     sleep                            2
     [Common] - Click element         ${location_españa}
     sleep                            4
+    [Common] - Verify url            ${url_españa}
+    sleep                            1
 
-[Keyword] - Click on dropdownlistItem france
+[Keyword] - Hover over dropdownlistItem Espanha
+
+    [Common] - Mouse over element         ${menuitem_location}
+    sleep                                 2
+    [Common] - Mouse over element         ${location_españa}
+    sleep                                 2
+    [Common] - Verify color of element    ${location_españa}      color    rgba(146, 195, 106, 1)
+    sleep                                 1
+
+[Keyword] - Click on dropdownlistItem França
 
     [Common] - Mouse over element    ${menuitem_location}
     sleep                            2
     [Common] - Click element         ${location_france}
     sleep                            4
+    [Common] - Verify url            ${url_france}
+    sleep                            1
 
-[Keyword] - Click on dropdownlistItem italia
+[Keyword] - Hover over dropdownlistItem França
+
+    [Common] - Mouse over element         ${menuitem_location}
+    sleep                                 2
+    [Common] - Mouse over element         ${location_france}
+    sleep                                 2
+    [Common] - Verify color of element    ${location_france}      color    rgba(146, 195, 106, 1)
+    sleep                                 1
+
+[Keyword] - Click on dropdownlistItem Itália
 
     [Common] - Mouse over element    ${menuitem_location}
     sleep                            2
     [Common] - Click element         ${location_italia}
     sleep                            4
+    [Common] - Verify url            ${url_italia}
+    sleep                            1
 
-[Keyword] - Click on dropdownlistItem nederland
+[Keyword] - Hover over dropdownlistItem Itália
+
+    [Common] - Mouse over element         ${menuitem_location}
+    sleep                                 2
+    [Common] - Mouse over element         ${location_italia}
+    sleep                                 2
+    [Common] - Verify color of element    ${location_italia}      color    rgba(146, 195, 106, 1)
+    sleep                                 1
+
+[Keyword] - Click on dropdownlistItem Holanda
 
     [Common] - Mouse over element    ${menuitem_location}
     sleep                            2
     [Common] - Click element         ${location_nederland}
     sleep                            4
+    [Common] - Verify url            ${url_nederland}
+    sleep                            1
 
+[Keyword] - Hover over dropdownlistItem Holanda
 
-[Keyword] - Click on dropdownlistItem norge
+    [Common] - Mouse over element         ${menuitem_location}
+    sleep                                 2
+    [Common] - Mouse over element         ${location_nederland}
+    sleep                                 2
+    [Common] - Verify color of element    ${location_nederland}    color    rgba(146, 195, 106, 1)
+    sleep                                 1
+
+[Keyword] - Click on dropdownlistItem Noruega
 
     [Common] - Mouse over element    ${menuitem_location}
     sleep                            2
     [Common] - Click element         ${location_norge}
     sleep                            4
+    [Common] - Verify url            ${url_norge}
+    sleep                            1
 
-[Keyword] - Click on dropdownlistItem sverige
+[Keyword] - Hover over dropdownlistItem Noruega
 
-    [Common] - Mouse over element    ${menuitem_location}
-    sleep                            2
-    [Common] - Click element         ${location_sverige}
-    sleep                            4
+    [Common] - Mouse over element         ${menuitem_location}
+    sleep                                 2
+    [Common] - Mouse over element         ${location_norge}
+    sleep                                 2
+    [Common] - Verify color of element    ${location_norge}       color    rgba(146, 195, 106, 1)
 
-[Keyword] - Click on dropdownlistItem united states
+[Keyword] - Click on dropdownlistItem Suécia
 
-    [Common] - Mouse over element    ${menuitem_location}
-    sleep                            2
-    [Common] - Click element         ${location_unitedstates}
-    sleep                            4
+    Common] - Mouse over element    ${menuitem_location}
+    sleep                           2
+    [Common] - Click element        ${location_sverige}
+    sleep                           4
+    [Common] - Verify url           ${url_sverige}
+    sleep                           1
+
+[Keyword] - Hover over dropdownlistItem Suécia
+
+    [Common] - Mouse over element         ${menuitem_location}
+    sleep                                 2
+    [Common] - Mouse over element         ${location_sverige}
+    sleep                                 2
+    [Common] - Verify color of element    ${location_sverige}     color    rgba(146, 195, 106, 1)
+
+[Keyword] - Click on dropdownlistItem EUA
+
+    Common] - Mouse over element    ${menuitem_location}
+    sleep                           2
+    [Common] - Click element        ${location_unitedstates}
+    sleep                           4
+    [Common] - Verify url           ${url_unitedstates}
+    sleep                           1
+
+[Keyword] - Hover over dropdownlistItem EUA
+
+    [Common] - Mouse over element         ${menuitem_location}
+    sleep                                 2
+    [Common] - Mouse over element         ${location_unitedstates}
+    sleep                                 2
+    [Common] - Verify color of element    ${location_unitedstates}    color    rgba(146, 195, 106, 1)
+
+[Keyword] - Display website in resolution 800x700
+
+    [Common] - Resize windows to ignore responsive display
+    sleep    2
+    [Common] - Click element        ${btn_menu}
+    sleep    2
+    [Common] - Verify element has right attribute    ${btn_menu}    ti-menu
+    sleep    1

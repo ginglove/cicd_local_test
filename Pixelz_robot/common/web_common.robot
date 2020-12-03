@@ -9,7 +9,7 @@ Resource    ../resource/import.robot
     Set window size        1920    1080
 
 [Common] - Resize windows to ignore responsive display
-    Set Window Size    1440    900
+    Set Window Size    800    700
 
 [Common] - Open Chrome Browser with mode
     [Arguments]     ${url}
@@ -142,7 +142,16 @@ Resource    ../resource/import.robot
     ${list_1}    Create List    @{default_options}
     ${list_2}    Create List    @{expect_options}
     Lists Should Be Equal   ${list_1}      ${list_2}         The dropdown list does not have enough options
+    
+[Common] - Verify url
+    [Arguments]    ${url_expect}
+    ${url_default}=    Get Location
+    ${sub_url_default}=    Get Substring    ${url_default}    0    21
+    Should Be Equal As Strings    ${sub_url_default}    ${url_expect}    The URL is wrong, please check again
 
-Get attribute
-
-    [Common] - Get CSS Property Value   //ul[@class='plan-feature']//li[1]//span[@class='option-mark']     background-color 
+[Common] - Verify element has right attribute
+    [Arguments]    ${locator}    ${attri_val}
+    #${attri_element}    Get WebElement   ${btn_menu}
+    ${attri_element}=    Get Element Attribute    ${locator}    class
+    Should Be Equal    ${attri_element}   ${attri_val}    Class attribute is not as required
+    

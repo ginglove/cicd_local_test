@@ -2,7 +2,7 @@
 
 Resource         ../resource/import.robot
 Test Setup       [Keyword] - Open browser and access to homepage
-Test Teardown    [Keyword] - Close browser
+#Test Teardown    [Keyword] - Close browser
 
 ### --- All test cases of header part
 *** Test Cases ***
@@ -250,3 +250,7 @@ PX_00060 - Check when click on dropdownlistItem [EUA]
 PX_00061 - Check when hover over dropdownlistItem [EUA]
 
     [Keyword] - Hover over dropdownlistItem EUA
+
+PX_00062 - Check display when set website resolution: 800x700
+
+    [Keyword] - Display website in resolution 800x700

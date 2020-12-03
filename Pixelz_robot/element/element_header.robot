@@ -49,19 +49,32 @@ ${btn_login}    //ul[@class='menu']//a[contains(.,'Log in')]
 ${btn_signup}    //a[contains(.,'Inscreva-se')]
 
 ## --- locator of dropdownlist location and items
-${location}                 //a[contains(.,'Location')]
-${menuitem_location}        //a[contains(.,'Localização')]
-${location_portuguese}      //a[contains(.,'Padrão')]
-${location_brasil}          //a[contains(.,'Brasil')]
-${location_denmark}         //a[contains(.,'Dinamarca')]
-${location_deutschland]}    //a[contains(.,'Alemanha')]
-${location_españa}          //a[contains(.,'Espanha')]
-${location_france}          //a[contains(.,'França')]
-${location_italia}          //a[contains(.,'Itália')]
-${location_nederland}       //a[contains(.,'Holanda')]
-${location_norge}           //a[contains(.,'Noruega')]
-${location_sverige}         //a[contains(.,'Suécia')]
-${location_unitedstates}    //a[contains(.,'EUA')]
+${location}                        //a[contains(.,'Location')]
+${menuitem_location}               //a[contains(.,'Localização')]
+${menuitem_location_all}           //a[contains(.,'Localização')]//parent::li//li
+${location_portuguese}             //a[contains(.,'Padrão')]
+${url_portuguese}                  https://br.pixelz.com
+${location_brasil}                 //a[contains(.,'Brasil')]
+${url_brasil}                      https://br.pixelz.com
+${location_denmark}                //a[contains(.,'Dinamarca')]
+${url_denmark}                     https://dk.pixelz.com
+${location_deutschland}            //a[contains(.,'Alemanha')]
+${url_deutschland}                 https://de.pixelz.com
+${location_españa}                 //a[contains(.,'Espanha')]
+${url_españa}                      https://es.pixelz.com
+${location_france}                 //a[contains(.,'França')]
+${url_france}                      https://fr.pixelz.com
+${location_italia}                 //a[contains(.,'Itália')]
+${url_italia}                      https://it.pixelz.com
+${location_nederland}              //a[contains(.,'Holanda')]
+${url_nederland}                   https://nl.pixelz.com
+${location_norge}                  //a[contains(.,'Noruega')]
+${url_norge}                       https://no.pixelz.com
+${location_sverige}                //a[contains(.,'Suécia')]
+${url_sverige}                     https://se.pixelz.com/
+${location_unitedstates}           //a[contains(.,'EUA')]
+${url_unitedstates}                https://www.pixelz.com
+@{menuitem_location_all_expect}    PADRÃO    BRASIL    DINAMARCA    ALEMANHA    ESPANHA    FRANÇA    ITÁLIA    HOLANDA    NORUEGA    SUÉCIA    EUA    
 
 ## --- page title
 ${title_homepage}        Pixelz: Serviço de Retoque Fotográfico On-Demand para E-Commerce
@@ -81,3 +94,7 @@ ${title_faq}             Pixelz: Pergunte-nos Sobre o Outsourcing de Imagens de 
 ${title_origin}          Pixelz: Sobre nossa empresa Dinamarquesa de edicão de imagens
 ${title_csr}             Responsabilidade Social Corporativa
 ${title_login}           Pixelz Administration
+
+## --- responsive display
+
+${btn_menu}    //i[@class='ti-menu']
