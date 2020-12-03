@@ -236,6 +236,8 @@ Resource    ../resource/import.robot
     sleep                                     2
     [Common] - Click element                  ${dropdownlistItem_documentapi}
     sleep                                     4
+    [Common] - Switch latest window
+    sleep                                     1
     [Common] - Verify it redirects to page    ${title_documentAPI}
     sleep                                     1
 
@@ -250,12 +252,12 @@ Resource    ../resource/import.robot
 
 [Keyword] - Click on dropdownlistItem Perguntas Frequentes
 
-    Common] - Mouse over element                    ${dropdownlist_resource}
-    sleep                                           2
-    [Common] - Verify value is displayed on item    ${dropdownlistItem_faq}     PERGUNTAS FREQUENTES
-    sleep                                           2
-    [Common] - Verify it redirects to page          ${title_faq}
-    sleep                                           1
+    [Common] - Mouse over element             ${dropdownlist_resource}
+    sleep                                     2
+    [Common] - Click element                  ${dropdownlistItem_faq}
+    sleep                                     2
+    [Common] - Verify it redirects to page    ${title_faq}
+    sleep                                     1
 
 [Keyword] - Hover over dropdownlistItem Perguntas Frequentes
 
@@ -507,7 +509,7 @@ Resource    ../resource/import.robot
 
 [Keyword] - Click on dropdownlistItem Suécia
 
-    Common] - Mouse over element    ${menuitem_location}
+    [Common] - Mouse over element    ${menuitem_location}
     sleep                           2
     [Common] - Click element        ${location_sverige}
     sleep                           4
@@ -524,7 +526,7 @@ Resource    ../resource/import.robot
 
 [Keyword] - Click on dropdownlistItem EUA
 
-    Common] - Mouse over element    ${menuitem_location}
+    [Common] - Mouse over element    ${menuitem_location}
     sleep                           2
     [Common] - Click element        ${location_unitedstates}
     sleep                           4
@@ -542,10 +544,10 @@ Resource    ../resource/import.robot
 [Keyword] - Display website in resolution 800x700
 
     [Common] - Resize windows to ignore responsive display
-    sleep    2
-    [Common] - Click element        ${btn_menu}
-    sleep    2
-    [Common] - Verify element has right attribute    ${btn_menu}    ti-menu
-    sleep    1
-    [Common] - Verify button should not be visible    ${btn_signup}
-    sleep    1
+    sleep                                                     2
+    [Common] - Click element                                  ${btn_menu}
+    sleep                                                     2
+    [Common] - Verify element has right attribute             ${btn_menu}      ti-menu
+    sleep                                                     1
+    [Common] - Verify button should not be visible            ${btn_signup}
+    sleep                                                     1

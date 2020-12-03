@@ -71,9 +71,9 @@ ${url_nederland}                   https://nl.pixelz.com
 ${location_norge}                  //a[contains(.,'Noruega')]
 ${url_norge}                       https://no.pixelz.com
 ${location_sverige}                //a[contains(.,'Suécia')]
-${url_sverige}                     https://se.pixelz.com/
+${url_sverige}                     https://se.pixelz.com
 ${location_unitedstates}           //a[contains(.,'EUA')]
-${url_unitedstates}                https://www.pixelz.com
+${url_unitedstates}                https://www.pixelz.co
 @{menuitem_location_all_expect}    PADRÃO    BRASIL    DINAMARCA    ALEMANHA    ESPANHA    FRANÇA    ITÁLIA    HOLANDA    NORUEGA    SUÉCIA    EUA    
 
 ## --- page title

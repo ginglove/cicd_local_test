@@ -142,7 +142,7 @@ Resource    ../resource/import.robot
     [Documentation]    Check page contains element text with arguments ${element_text}
     ...    ${element_text} is locator of element
     [Arguments]  ${element_text}
-    wait until page contains    ${element_text}     20
+    wait until page contains    ${element_text}     10
 
 [Common] - Verify it redirects to page
     [Documentation]    Verify it redirects to page has title as required with arguments ${page_title}
@@ -183,10 +183,14 @@ Resource    ../resource/import.robot
     Should Be Equal    ${attri_element}   ${attri_val}    Class attribute is not as required
     
 [Common] - Verify button should not be visible
-    [Documentation]    erify button should not be visible with argument ${button}
+    [Documentation]    Verify button should not be visible with argument ${button}
     ...    ${button} is locator of button
     [Arguments]  ${button}
     Element Should Not Be Visible     ${button}    messsage=Element is visible
+
+[Common] - Switch latest window
+    [Documentation]    Switch latest window
+    Switch Window    locator=NEW    timeout=None    browser=CURRENT
 
 [Common] - Compare 2 lists with each other
     [Arguments]    @{list_elements}
