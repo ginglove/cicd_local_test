@@ -547,3 +547,5 @@ Resource    ../resource/import.robot
     sleep    2
     [Common] - Verify element has right attribute    ${btn_menu}    ti-menu
     sleep    1
+    [Common] - Verify button should not be visible    ${btn_signup}
+    sleep    1

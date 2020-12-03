@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20201203 14:07:14.274" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20201203 14:15:48.033" rpa="false">
 <suite id="s1" name="Testcase Header" source="D:\Automation Testing\Exercise\Git\cicd_local_test\Pixelz_robot\testcase\testcase_header.robot">
 <test id="s1-t1" name="PX_00062 - Check display when set website resolution: 800x700">
 <kw name="[Keyword] - Open browser and access to homepage" library="keyword_browser" type="setup">
@@ -15,8 +15,8 @@
 <assign>
 <var>${browser}</var>
 </assign>
-<msg timestamp="20201203 14:07:14.457" level="INFO">${browser} = chrome</msg>
-<status status="PASS" starttime="20201203 14:07:14.457" endtime="20201203 14:07:14.457"></status>
+<msg timestamp="20201203 14:15:48.204" level="INFO">${browser} = chrome</msg>
+<status status="PASS" starttime="20201203 14:15:48.204" endtime="20201203 14:15:48.204"></status>
 </kw>
 <kw name="Convert To Boolean" library="BuiltIn">
 <doc>Converts the given item to Boolean true or false.</doc>
@@ -26,8 +26,8 @@
 <assign>
 <var>${true}</var>
 </assign>
-<msg timestamp="20201203 14:07:14.458" level="INFO">${true} = True</msg>
-<status status="PASS" starttime="20201203 14:07:14.458" endtime="20201203 14:07:14.458"></status>
+<msg timestamp="20201203 14:15:48.205" level="INFO">${true} = True</msg>
+<status status="PASS" starttime="20201203 14:15:48.205" endtime="20201203 14:15:48.205"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -42,8 +42,8 @@
 <assign>
 <var>${list_options}</var>
 </assign>
-<msg timestamp="20201203 14:07:14.458" level="INFO">${list_options} = ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security', '--disable-impl-side-painting', '--enable-features=NetworkService,NetworkServiceInProcess']</msg>
-<status status="PASS" starttime="20201203 14:07:14.458" endtime="20201203 14:07:14.458"></status>
+<msg timestamp="20201203 14:15:48.205" level="INFO">${list_options} = ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security', '--disable-impl-side-painting', '--enable-features=NetworkService,NetworkServiceInProcess']</msg>
+<status status="PASS" starttime="20201203 14:15:48.205" endtime="20201203 14:15:48.205"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -53,8 +53,8 @@
 <assign>
 <var>${args}</var>
 </assign>
-<msg timestamp="20201203 14:07:14.458" level="INFO">${args} = {'args': ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security', '--disable-impl-side-painting', '--enable-features=NetworkService,NetworkServiceInProcess']}</msg>
-<status status="PASS" starttime="20201203 14:07:14.458" endtime="20201203 14:07:14.458"></status>
+<msg timestamp="20201203 14:15:48.206" level="INFO">${args} = {'args': ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security', '--disable-impl-side-painting', '--enable-features=NetworkService,NetworkServiceInProcess']}</msg>
+<status status="PASS" starttime="20201203 14:15:48.205" endtime="20201203 14:15:48.206"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -67,8 +67,8 @@
 <assign>
 <var>${desired_capabilities}</var>
 </assign>
-<msg timestamp="20201203 14:07:14.459" level="INFO">${desired_capabilities} = {'acceptSslCerts': True, 'acceptInsecureCerts': True, 'ignore-certificate-errors': True, 'chromeOptions': {'args': ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security...</msg>
-<status status="PASS" starttime="20201203 14:07:14.459" endtime="20201203 14:07:14.459"></status>
+<msg timestamp="20201203 14:15:48.206" level="INFO">${desired_capabilities} = {'acceptSslCerts': True, 'acceptInsecureCerts': True, 'ignore-certificate-errors': True, 'chromeOptions': {'args': ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security...</msg>
+<status status="PASS" starttime="20201203 14:15:48.206" endtime="20201203 14:15:48.206"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -108,8 +108,8 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20201203 14:07:14.460" level="INFO">Opening browser 'chrome' to base url 'https://www.pixelz.com/'.</msg>
-<status status="PASS" starttime="20201203 14:07:14.460" endtime="20201203 14:07:18.818"></status>
+<msg timestamp="20201203 14:15:48.207" level="INFO">Opening browser 'chrome' to base url 'https://www.pixelz.com/'.</msg>
+<status status="PASS" starttime="20201203 14:15:48.207" endtime="20201203 14:15:52.829"></status>
 </kw>
 <kw name="[Common] - Maximize browser size to fit screen" library="web_common">
 <kw name="Set Window Position" library="SeleniumLibrary">
@@ -118,7 +118,7 @@
 <arg>0</arg>
 <arg>0</arg>
 </arguments>
-<status status="PASS" starttime="20201203 14:07:18.818" endtime="20201203 14:07:20.931"></status>
+<status status="PASS" starttime="20201203 14:15:52.830" endtime="20201203 14:15:54.955"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -126,39 +126,39 @@
 <arg>1920</arg>
 <arg>1080</arg>
 </arguments>
-<status status="PASS" starttime="20201203 14:07:20.931" endtime="20201203 14:07:21.038"></status>
+<status status="PASS" starttime="20201203 14:15:54.955" endtime="20201203 14:15:55.085"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:18.818" endtime="20201203 14:07:21.038"></status>
+<status status="PASS" starttime="20201203 14:15:52.829" endtime="20201203 14:15:55.085"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:14.459" endtime="20201203 14:07:21.038"></status>
+<status status="PASS" starttime="20201203 14:15:48.207" endtime="20201203 14:15:55.085"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:14.459" endtime="20201203 14:07:21.038"></status>
+<status status="PASS" starttime="20201203 14:15:48.206" endtime="20201203 14:15:55.085"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:14.457" endtime="20201203 14:07:21.038"></status>
+<status status="PASS" starttime="20201203 14:15:48.204" endtime="20201203 14:15:55.085"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201203 14:07:23.040" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201203 14:07:21.039" endtime="20201203 14:07:23.040"></status>
+<msg timestamp="20201203 14:15:57.086" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201203 14:15:55.085" endtime="20201203 14:15:57.086"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${accept_cookie}</arg>
 </arguments>
-<msg timestamp="20201203 14:07:23.041" level="INFO">Clicking element '//a[@id='hs-eu-confirmation-button']'.</msg>
-<status status="PASS" starttime="20201203 14:07:23.041" endtime="20201203 14:07:23.176"></status>
+<msg timestamp="20201203 14:15:57.087" level="INFO">Clicking element '//a[@id='hs-eu-confirmation-button']'.</msg>
+<status status="PASS" starttime="20201203 14:15:57.086" endtime="20201203 14:15:57.218"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201203 14:07:25.177" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201203 14:07:23.176" endtime="20201203 14:07:25.177"></status>
+<msg timestamp="20201203 14:15:59.218" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201203 14:15:57.218" endtime="20201203 14:15:59.218"></status>
 </kw>
 <kw name="[Common] - Click element" library="web_common">
 <arguments>
@@ -181,27 +181,27 @@
 <arg>timeout=10s</arg>
 <arg>error=Could not find ${element_loc} element.</arg>
 </arguments>
-<status status="PASS" starttime="20201203 14:07:25.180" endtime="20201203 14:07:25.256"></status>
+<status status="PASS" starttime="20201203 14:15:59.218" endtime="20201203 14:15:59.243"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:25.179" endtime="20201203 14:07:25.256"></status>
+<status status="PASS" starttime="20201203 14:15:59.218" endtime="20201203 14:15:59.243"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element_loc}</arg>
 </arguments>
-<msg timestamp="20201203 14:07:25.256" level="INFO">Clicking element '//i[@title='Dismiss']'.</msg>
-<status status="PASS" starttime="20201203 14:07:25.256" endtime="20201203 14:07:25.358"></status>
+<msg timestamp="20201203 14:15:59.243" level="INFO">Clicking element '//i[@title='Dismiss']'.</msg>
+<status status="PASS" starttime="20201203 14:15:59.243" endtime="20201203 14:15:59.274"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:25.178" endtime="20201203 14:07:25.358"></status>
+<status status="PASS" starttime="20201203 14:15:59.218" endtime="20201203 14:15:59.274"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201203 14:07:27.361" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201203 14:07:25.359" endtime="20201203 14:07:27.361"></status>
+<msg timestamp="20201203 14:16:01.275" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201203 14:15:59.274" endtime="20201203 14:16:01.275"></status>
 </kw>
 <kw name="[Common] - Mouse over element" library="web_common">
 <arguments>
@@ -224,27 +224,27 @@
 <arg>timeout=20s</arg>
 <arg>error=Could not find ${element_loc} element.</arg>
 </arguments>
-<status status="PASS" starttime="20201203 14:07:27.362" endtime="20201203 14:07:27.384"></status>
+<status status="PASS" starttime="20201203 14:16:01.275" endtime="20201203 14:16:01.296"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:27.361" endtime="20201203 14:07:27.384"></status>
+<status status="PASS" starttime="20201203 14:16:01.275" endtime="20201203 14:16:01.296"></status>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
 <arguments>
 <arg>${element_loc}</arg>
 </arguments>
-<msg timestamp="20201203 14:07:27.385" level="INFO">Simulating Mouse Over on element '//a[contains(.,'Location')]'.</msg>
-<status status="PASS" starttime="20201203 14:07:27.384" endtime="20201203 14:07:27.658"></status>
+<msg timestamp="20201203 14:16:01.297" level="INFO">Simulating Mouse Over on element '//a[contains(.,'Location')]'.</msg>
+<status status="PASS" starttime="20201203 14:16:01.296" endtime="20201203 14:16:01.571"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:27.361" endtime="20201203 14:07:27.658"></status>
+<status status="PASS" starttime="20201203 14:16:01.275" endtime="20201203 14:16:01.571"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201203 14:07:29.660" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201203 14:07:27.658" endtime="20201203 14:07:29.660"></status>
+<msg timestamp="20201203 14:16:03.573" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201203 14:16:01.571" endtime="20201203 14:16:03.573"></status>
 </kw>
 <kw name="[Common] - Click element" library="web_common">
 <arguments>
@@ -267,27 +267,27 @@
 <arg>timeout=10s</arg>
 <arg>error=Could not find ${element_loc} element.</arg>
 </arguments>
-<status status="PASS" starttime="20201203 14:07:29.661" endtime="20201203 14:07:29.680"></status>
+<status status="PASS" starttime="20201203 14:16:03.575" endtime="20201203 14:16:03.636"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:29.660" endtime="20201203 14:07:29.680"></status>
+<status status="PASS" starttime="20201203 14:16:03.574" endtime="20201203 14:16:03.636"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element_loc}</arg>
 </arguments>
-<msg timestamp="20201203 14:07:29.680" level="INFO">Clicking element '//a[contains(.,'Brasil')]'.</msg>
-<status status="PASS" starttime="20201203 14:07:29.680" endtime="20201203 14:07:32.802"></status>
+<msg timestamp="20201203 14:16:03.637" level="INFO">Clicking element '//a[contains(.,'Brasil')]'.</msg>
+<status status="PASS" starttime="20201203 14:16:03.636" endtime="20201203 14:16:06.980"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:29.660" endtime="20201203 14:07:32.803"></status>
+<status status="PASS" starttime="20201203 14:16:03.573" endtime="20201203 14:16:06.980"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201203 14:07:34.804" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201203 14:07:32.803" endtime="20201203 14:07:34.804"></status>
+<msg timestamp="20201203 14:16:08.981" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201203 14:16:06.980" endtime="20201203 14:16:08.981"></status>
 </kw>
 <kw name="[Common] - Click element" library="web_common">
 <arguments>
@@ -310,29 +310,29 @@
 <arg>timeout=10s</arg>
 <arg>error=Could not find ${element_loc} element.</arg>
 </arguments>
-<status status="PASS" starttime="20201203 14:07:34.804" endtime="20201203 14:07:34.824"></status>
+<status status="PASS" starttime="20201203 14:16:08.981" endtime="20201203 14:16:09.004"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:34.804" endtime="20201203 14:07:34.824"></status>
+<status status="PASS" starttime="20201203 14:16:08.981" endtime="20201203 14:16:09.004"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element_loc}</arg>
 </arguments>
-<msg timestamp="20201203 14:07:34.824" level="INFO">Clicking element '//i[@title='Dismiss']'.</msg>
-<status status="PASS" starttime="20201203 14:07:34.824" endtime="20201203 14:07:34.873"></status>
+<msg timestamp="20201203 14:16:09.004" level="INFO">Clicking element '//i[@title='Dismiss']'.</msg>
+<status status="PASS" starttime="20201203 14:16:09.004" endtime="20201203 14:16:09.047"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:34.804" endtime="20201203 14:07:34.873"></status>
+<status status="PASS" starttime="20201203 14:16:08.981" endtime="20201203 14:16:09.047"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201203 14:07:36.876" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201203 14:07:34.874" endtime="20201203 14:07:36.876"></status>
+<msg timestamp="20201203 14:16:11.049" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201203 14:16:09.048" endtime="20201203 14:16:11.049"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:14.457" endtime="20201203 14:07:36.877"></status>
+<status status="PASS" starttime="20201203 14:15:48.204" endtime="20201203 14:16:11.049"></status>
 </kw>
 <kw name="[Keyword] - Display website in resolution 800x700" library="keyword_header">
 <kw name="[Common] - Resize windows to ignore responsive display" library="web_common">
@@ -342,17 +342,17 @@
 <arg>800</arg>
 <arg>700</arg>
 </arguments>
-<status status="PASS" starttime="20201203 14:07:36.881" endtime="20201203 14:07:37.004"></status>
+<status status="PASS" starttime="20201203 14:16:11.052" endtime="20201203 14:16:11.185"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:36.880" endtime="20201203 14:07:37.004"></status>
+<status status="PASS" starttime="20201203 14:16:11.051" endtime="20201203 14:16:11.185"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201203 14:07:39.007" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201203 14:07:37.005" endtime="20201203 14:07:39.007"></status>
+<msg timestamp="20201203 14:16:13.188" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201203 14:16:11.185" endtime="20201203 14:16:13.188"></status>
 </kw>
 <kw name="[Common] - Click element" library="web_common">
 <arguments>
@@ -375,27 +375,27 @@
 <arg>timeout=10s</arg>
 <arg>error=Could not find ${element_loc} element.</arg>
 </arguments>
-<status status="PASS" starttime="20201203 14:07:39.007" endtime="20201203 14:07:39.025"></status>
+<status status="PASS" starttime="20201203 14:16:13.191" endtime="20201203 14:16:13.253"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:39.007" endtime="20201203 14:07:39.025"></status>
+<status status="PASS" starttime="20201203 14:16:13.190" endtime="20201203 14:16:13.254"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element_loc}</arg>
 </arguments>
-<msg timestamp="20201203 14:07:39.025" level="INFO">Clicking element '//i[@class='ti-menu']'.</msg>
-<status status="PASS" starttime="20201203 14:07:39.025" endtime="20201203 14:07:39.053"></status>
+<msg timestamp="20201203 14:16:13.254" level="INFO">Clicking element '//i[@class='ti-menu']'.</msg>
+<status status="PASS" starttime="20201203 14:16:13.254" endtime="20201203 14:16:13.306"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:39.007" endtime="20201203 14:07:39.053"></status>
+<status status="PASS" starttime="20201203 14:16:13.189" endtime="20201203 14:16:13.306"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201203 14:07:41.055" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201203 14:07:39.053" endtime="20201203 14:07:41.055"></status>
+<msg timestamp="20201203 14:16:15.308" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201203 14:16:13.307" endtime="20201203 14:16:15.308"></status>
 </kw>
 <kw name="[Common] - Verify element has right attribute" library="web_common">
 <arguments>
@@ -411,8 +411,8 @@
 <assign>
 <var>${attri_element}</var>
 </assign>
-<msg timestamp="20201203 14:07:41.067" level="INFO">${attri_element} = ti-menu</msg>
-<status status="PASS" starttime="20201203 14:07:41.055" endtime="20201203 14:07:41.067"></status>
+<msg timestamp="20201203 14:16:15.320" level="INFO">${attri_element} = ti-menu</msg>
+<status status="PASS" starttime="20201203 14:16:15.308" endtime="20201203 14:16:15.320"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -421,23 +421,56 @@
 <arg>${attri_val}</arg>
 <arg>Class attribute is not as required</arg>
 </arguments>
-<status status="PASS" starttime="20201203 14:07:41.067" endtime="20201203 14:07:41.067"></status>
+<status status="PASS" starttime="20201203 14:16:15.320" endtime="20201203 14:16:15.321"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:41.055" endtime="20201203 14:07:41.067"></status>
+<status status="PASS" starttime="20201203 14:16:15.308" endtime="20201203 14:16:15.321"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20201203 14:07:42.068" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201203 14:07:41.067" endtime="20201203 14:07:42.068"></status>
+<msg timestamp="20201203 14:16:16.322" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201203 14:16:15.321" endtime="20201203 14:16:16.322"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:36.878" endtime="20201203 14:07:42.068"></status>
+<kw name="[Common] - Verify page should not contain button" library="web_common">
+<arguments>
+<arg>${btn_signup}</arg>
+</arguments>
+<kw name="Element Should Not Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<arguments>
+<arg>${button}</arg>
+<arg>messsage=Element is visible</arg>
+</arguments>
+<msg timestamp="20201203 14:16:16.395" level="INFO">Element '//a[contains(.,'Inscreva-se')]' exists but is not displayed.</msg>
+<status status="PASS" starttime="20201203 14:16:16.324" endtime="20201203 14:16:16.395"></status>
 </kw>
-<status status="PASS" starttime="20201203 14:07:14.456" endtime="20201203 14:07:42.068" critical="yes"></status>
+<status status="PASS" starttime="20201203 14:16:16.323" endtime="20201203 14:16:16.395"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20201203 14:16:17.397" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201203 14:16:16.395" endtime="20201203 14:16:17.397"></status>
+</kw>
+<status status="PASS" starttime="20201203 14:16:11.051" endtime="20201203 14:16:17.398"></status>
+</kw>
+<kw name="[Keyword] - Close browser" library="keyword_browser" type="teardown">
+<kw name="[Common] - Close Browser" library="web_common">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201203 14:16:17.401" endtime="20201203 14:16:19.587"></status>
+</kw>
+<status status="PASS" starttime="20201203 14:16:17.400" endtime="20201203 14:16:19.587"></status>
+</kw>
+<status status="PASS" starttime="20201203 14:16:17.399" endtime="20201203 14:16:19.587"></status>
+</kw>
+<status status="PASS" starttime="20201203 14:15:48.203" endtime="20201203 14:16:19.588" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20201203 14:07:14.275" endtime="20201203 14:07:42.069"></status>
+<status status="PASS" starttime="20201203 14:15:48.035" endtime="20201203 14:16:19.590"></status>
 </suite>
 <statistics>
 <total>

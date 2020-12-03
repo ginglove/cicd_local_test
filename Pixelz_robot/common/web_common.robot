@@ -155,3 +155,7 @@ Resource    ../resource/import.robot
     ${attri_element}=    Get Element Attribute    ${locator}    class
     Should Be Equal    ${attri_element}   ${attri_val}    Class attribute is not as required
     
+[Common] - Verify button should not be visible
+#    TODO will update to allow @{buttons} as web_locator arguments
+    [Arguments]  ${button}
+    Element Should Not Be Visible     ${button}    messsage=Element is visible

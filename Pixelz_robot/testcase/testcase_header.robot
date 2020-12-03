@@ -2,7 +2,7 @@
 
 Resource         ../resource/import.robot
 Test Setup       [Keyword] - Open browser and access to homepage
-#Test Teardown    [Keyword] - Close browser
+Test Teardown    [Keyword] - Close browser
 
 ### --- All test cases of header part
 *** Test Cases ***
