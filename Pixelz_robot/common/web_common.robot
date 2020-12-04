@@ -114,7 +114,6 @@ Resource    ../resource/import.robot
     [Arguments]    ${locator}    ${attribute name}
     ${css}=         Get WebElement    ${locator}
     ${prop_val}=    Call Method       ${css}    value_of_css_property    ${attribute name}
-    log to console  -----------------------${prop_val}
     [Return]    ${prop_val}
 
 [Common] - Verify color of element
