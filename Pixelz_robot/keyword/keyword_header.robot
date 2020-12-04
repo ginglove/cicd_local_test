@@ -5,7 +5,7 @@ Resource    ../resource/import.robot
 ### --- All keywords of header part
 *** Keywords ***
 
-[Keyword] - Check elements has value as required
+[Keyword] - Check elements has value as required on header
 
     [Common] - Verify value is displayed on item    ${menuitem_home}            HOME
     sleep                                           1

@@ -9,7 +9,7 @@ Test Teardown    [Keyword] - Close browser
 
 PX_00001 - Check menuitems on menu bar have value as required
 
-    [Keyword] - Check elements has value as required
+    [Keyword] - Check elements has value as required on header
 
 PX_00002 - Check logo when click on
 

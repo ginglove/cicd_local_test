@@ -114,6 +114,7 @@ Resource    ../resource/import.robot
     [Arguments]    ${locator}    ${attribute name}
     ${css}=         Get WebElement    ${locator}
     ${prop_val}=    Call Method       ${css}    value_of_css_property    ${attribute name}
+    log to console  -----------------------${prop_val}
     [Return]    ${prop_val}
 
 [Common] - Verify color of element
@@ -181,7 +182,15 @@ Resource    ../resource/import.robot
     [Arguments]    ${locator}    ${attri_val}
     ${attri_element}=    Get Element Attribute    ${locator}    class
     Should Be Equal    ${attri_element}   ${attri_val}    Class attribute is not as required
-    
+
+[Common] - Verify element has right css propery
+    [Documentation]    Verify url with argument ${url_expect}
+    ...    ${url_expect} is url users expect
+    [Arguments]    ${locator}    ${css_prop_expect}    ${attribute_name}
+    ${css}=         Get WebElement    ${locator}
+    ${prop_val}=    Call Method       ${css}    value_of_css_property    ${attribute_name}
+    Should Be Equal    ${prop_val}   ${css_prop_expect}    Css property is not as required
+
 [Common] - Verify button should not be visible
     [Documentation]    Verify button should not be visible with argument ${button}
     ...    ${button} is locator of button
@@ -205,3 +214,10 @@ Resource    ../resource/import.robot
     ${ls1}    Create List    @{MyList}
     ${ls2}    Create List    @{list_color}
     Lists Should Be Equal    ${ls1}      ${ls2}         2
+
+[Common] - Scroll page till go to bottom
+    [Documentation]    Scroll page till go to bottom
+    execute javascript    window.scrollTo(0,document.body.scrollHeight)
+    sleep                 1
+    execute javascript    window.scrollTo(0,document.body.scrollHeight)
+    sleep                 3
