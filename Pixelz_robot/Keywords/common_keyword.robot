@@ -5,7 +5,7 @@ Resource    ../Resources/import.robot
 *** Keywords ***
 
 [Keyword] - Open browser
-     [Common] - Open Chrome Browser with mode           ${url}
+     [Common] - Open Chrome Browser with mode          ${url}
      sleep    2
      Click element    ${accept}
      sleep    2
