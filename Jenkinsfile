@@ -3,26 +3,18 @@ pipeline {
 //execution and that each stage directive must specify its own agent section.
     agent {docker 
            {
-               image 'centos/python-36-centos7'
+               image 'docker_robot_python_37/docker_robot_python_37:1.0'
                args '-u root --privileged'
            }
           }
     stages {
-        stage('Build') {
+        stage('Check Dependencies Requirement') {
             steps {
                 sh  'echo "test"'
                 sh  'pip --version'
-            }
-        }
-        stage('Install robot requirement'){
-            steps{  
-                sh 'yum install wget -y'
-                sh 'wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm'
-                sh 'yum localinstall ./google-chrome-stable_current_x86_64.rpm -y'
-                sh 'google-chrome --version'
-                sh 'which google-chrome'
-                sh 'pip install -r ./python_setup_env/robot_requirements.txt'
-                sh 'webdrivermanager chrome'
+                sh  'google-chrome --version'
+                sh  'chromedriver --version'
+                sh  'robot --version'
             }
         }
         stage('Verify Robot Version'){
@@ -31,7 +23,7 @@ pipeline {
                 sh 'sh ./Data/run.sh'
                 sh 'rm -rf ./results'
                 sh 'mkdir ./results'
-                sh 'cp -r ./Data/Shapefiles/Landuse/Reports/* ./results'
+                sh 'cp -r ./Pixelz_robot/Testcases/Results/* ./results'
                 sh ' ls -al ./results'
                 script {
                   step(
