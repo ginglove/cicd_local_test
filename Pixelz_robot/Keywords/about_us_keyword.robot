@@ -39,7 +39,7 @@ Resource    ../Resources/import.robot
    sleep                       3
    [Common] - Mouse over element    ${btn_learnmore}
     sleep                       4
-    [Common] - Verify color of element    ${btn_learnmore}     background     rgb(146, 195, 106)
+    [Common] - Verify color of element    ${btn_learnmore}     background     rgba(146, 195, 106, 1)
     sleep                       2
 
 [Keyword] - Click on "Learn More" button
@@ -65,7 +65,7 @@ Resource    ../Resources/import.robot
     sleep                       2
    [Common] - Mouse over element    ${btn_lm_net}
     sleep                       2
-    [Common] - Verify color of element    ${btn_lm_net}      color   rgba(146, 195, 106, 1)
+    [Common] - Verify color of element    ${btn_lm_net}      color    rgba(255, 255, 255, 1)
     sleep                       2
 
 [Keyword] - Click on "Learn More" button of ".NET DEVELOPER" item
@@ -76,14 +76,14 @@ Resource    ../Resources/import.robot
    [Common] - Click element    ${btn_lm_net}
     sleep                       2
 
-[Keyword] - Hover on "SAN-DIEGO" item in JOIN OUR GLOBAL TEAM
+[Keyword] - Hover on "BERLIN" item in JOIN OUR GLOBAL TEAM
    [Common] - Click element    ${dropdownlist_aboutus}
     sleep                       2
    [Common] - Click element    ${dropdownlistItem_jobs}
     sleep                       2
-   [Common] - Mouse over element    ${link_sandiego}
+   [Common] - Mouse over element    ${link_berlin}
     sleep                       2
-    [Common] - Verify color of element    ${link_sandiego}      color   rgba(146, 195, 106, 1)
+    [Common] - Verify color of element    ${link_berlin}      color   rgba(102, 102, 102, 1)
     sleep                       2
 
 [Keyword] - Hover on "Learn More" button of "Quality Support Executive (QSE)" item
@@ -93,7 +93,7 @@ Resource    ../Resources/import.robot
     sleep                       2
    [Common] - Mouse over element    ${btn_lm_qse}
     sleep                       2
-   [Common] - Verify color of element    ${btn_lm_qse}    color   rgba(146, 195, 106, 1)
+   [Common] - Verify color of element    ${btn_lm_qse}    color    rgba(255, 255, 255, 1)
     sleep                       2
 
 [Keyword] - Click on "Learn More" button of "Quality Support Executive (QSE)" item
@@ -104,12 +104,12 @@ Resource    ../Resources/import.robot
    [Common] - Click element    ${btn_lm_qse}
     sleep                       2
 
-[Keyword] - Click on "SAN-DIEGO" item in JOIN OUR GLOBAL TEAM
+[Keyword] - Click on "BERLIN" item in JOIN OUR GLOBAL TEAM
    [Common] - Click element    ${dropdownlist_aboutus}
     sleep                       2
    [Common] - Click element    ${dropdownlistItem_jobs}
     sleep                       2
-   [Common] - Click element    ${link_sandiego}
+   [Common] - Click element    ${link_berlin}
     sleep                       2
 
 [Keyword] - Hover on "Learn More" button of "Customer Success Manager (Retouching)" item
@@ -117,11 +117,11 @@ Resource    ../Resources/import.robot
     sleep                       2
    [Common] - Click element    ${dropdownlistItem_jobs}
     sleep                       2
-   [Common] - Click element     ${link_sandiego}
+   [Common] - Click element     ${link_berlin}
     sleep                       3
    [Common] - Mouse over element    ${btn_lm_CSM}
     sleep                       2
-   [Common] - Verify color of element    ${btn_lm_CSM}    background     rgba(146, 195, 106, 1)
+   [Common] - Verify color of element    ${btn_lm_CSM}    color     rgba(255, 255, 255, 1)
     sleep                       2
 
 [Keyword] - Click on "Learn More" button of "Customer Success Manager (Retouching)" item
@@ -129,7 +129,7 @@ Resource    ../Resources/import.robot
     sleep                       2
    [Common] - Click element    ${dropdownlistItem_jobs}
     sleep                       3
-   [Common] - Click element    ${link_sandiego}
+   [Common] - Click element    ${link_berlin}
     sleep                       3
    [Common] - Click element    ${btn_lm_CSM}
     sleep                       2

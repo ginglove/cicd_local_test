@@ -32,11 +32,11 @@ Test Teardown    [Keyword] - Close browser
 [PX_00130] - Check when click on "Learn More" button of "Quality Support Executive (QSE)" item
     [Keyword] - Click on "Learn More" button of "Quality Support Executive (QSE)" item
 
-[PX_00131] - Check when hover on "SAN-DIEGO" link in JOIN OUR GLOBAL TEAM
-    [Keyword] - Hover on "SAN-DIEGO" item in JOIN OUR GLOBAL TEAM
+[PX_00131] - Check when hover on "BERLIN" link in JOIN OUR GLOBAL TEAM
+    [Keyword] - Hover on "BERLIN" item in JOIN OUR GLOBAL TEAM
 
-[PX_00132] - Check when click on "SAN-DIEGO" link in JOIN OUR GLOBAL TEAM
-    [Keyword] - Click on "SAN-DIEGO" item in JOIN OUR GLOBAL TEAM
+[PX_00132] - Check when click on "BERLIN" link in JOIN OUR GLOBAL TEAM
+    [Keyword] - Click on "BERLIN" item in JOIN OUR GLOBAL TEAM
 
 [PX_00134] - Check when hover on "Learn More" button of "Customer Success Manager (Retouching)" item
     [Keyword] - Hover on "Learn More" button of "Customer Success Manager (Retouching)" item
