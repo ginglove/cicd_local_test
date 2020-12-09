@@ -13,4 +13,6 @@ ${lm_polo}        css=a[href*='../case-studies/marcopolo']
 ${lm_open}        css=a[href*='../case-studies/open-for-vintage']
 ${lm_chairish}        css=a[href*='../case-studies/chairish']
 ${lm_babyshop}        css=a[href*='../case-studies/babyshop']
-${lm_seeoptions}        css=a[href*='https://www.pixelz.com/pricing/']
+${logo_trustpilot}
+${logo_trustscore}      css=a[id='profile-link']
+${lm_seeoptions}      css=a[href*='https://www.pixelz.com/pricing/']
