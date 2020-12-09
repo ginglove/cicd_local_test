@@ -34,6 +34,7 @@ Resource    ../Resources/import.robot
     [Common] - Maximize browser size to fit screen
     Go To                                             ${url}
 
+
 [Common] - Click element
     [Arguments]  ${element_loc}
     wait until keyword succeeds     5s    1s    Wait Until Element Is Visible    ${element_loc}    timeout=10s    error=Could not find ${element_loc} element.
