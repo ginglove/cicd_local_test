@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource         ../resource/import.robot
+Resource         ../Resources/import.robot
 Test Setup       Run keywords
 ...              [Keyword] - Open browser and access to homepage
 ...              [Common] - Scroll page till go to bottom

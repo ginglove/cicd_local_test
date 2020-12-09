@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource         ../resource/import.robot
+Resource         ../Resources/import.robot
 Test Setup       [Keyword] - Open browser and access to homepage
 Test Teardown    [Keyword] - Close browser
 

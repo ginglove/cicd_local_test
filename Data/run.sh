@@ -25,8 +25,8 @@ echo "=== CURR_PATH is $curr_path ==="
 ############ RUNNING TEST ##################
 echo "=== Run robot test==="
 parentpath="$(dirname "$(dirname "$(dirname $PWD)")")"
-TESTCASE_FOLDER="$PWD/Data/Shapefiles/Landuse"
-RESULT_FOLDER="$PWD/Data/Shapefiles/Landuse/Reports"
+TESTCASE_FOLDER="$PWD/Pixelz_robot/Testcases"
+RESULT_FOLDER="$PWD/Pixelz_robot/Testcases/Results"
 
 robot -L TRACE -v browser:headlesschrome -e ignore -e not-ready -d $RESULT_FOLDER $TESTCASE_FOLDER
 ########################### ENABLE BELOW SECTION TO DISABLE TEST ##########################
