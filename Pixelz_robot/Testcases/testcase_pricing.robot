@@ -9,3 +9,6 @@ Test Setup       Run keywords
 ### --- All test cases of header part
 *** Test Cases ***
 
+PX_00100 - Check display text when select label [Solo] on the screen
+    
+    [Keyword] - Select label Solo on the screen
