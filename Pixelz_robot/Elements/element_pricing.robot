@@ -10,14 +10,15 @@ ${radiobtn_payment_annually}    //label[@for='payment_annually']
 ${ddlist_currency}              //select[@id='currency']
 ${btn_compare_plans}            //a[contains(.,'COMPARE PLANOS')]
 
+@{list_elements_locator}    //ul[@class='plan-feature']//span[@class='option-mark']
 ${cb_self_service_platform}      //p[contains(.,'Plataforma de autoatendimento')]
 ${cb_background_removal}         //p[contains(.,'Background removal')]
 ${cb_cropping_alignment}         //p[contains(.,'Cropping / Alignment')]
 ${cb_essential_editing}          //p[contains(text(),'Edição Essencial')]
 ${cb_marketplace_presets}        //p[contains(text(),'Predefinições de mercado')]
-${cb_multiple_outputs}           //p[contains(text(),'Multiple outputs')]
-${cb_instructions_tool}          //p[contains(text(),'Múltiplas saídas')]
-${cb_rejection_tool}             //p[contains(text(),'Ferramenta de instruções')]
+${cb_multiple_outputs}           //p[contains(text(),'Múltiplas saídas')]
+${cb_instructions_tool}          //p[contains(text(),'Ferramenta de instruções')]
+${cb_rejection_tool}             //p[contains(text(),'Ferramenta de rejeição')]
 ${cb_email_support}              //p[contains(text(),'Suporte por email')]
 ${cb_basic_retouch}              //p[contains(text(),'Retoque básico')]
 ${cb_professional_retouch}       //p[contains(text(),'Retoque profissional')]
@@ -32,12 +33,20 @@ ${cb_account_manager}            //p[contains(text(),'Gerente de contas')]
 ${cb_skype_support}              //p[contains(text(),'Suporte 24 horas por dia, sete dias por semana')]
 ${cb_service_level_agreement}    //p[contains(text(),'Acordo de Nível de Serviço')]
 
+${lb_composição_de_produtos}    //h4[contains(.,'Composição de produtos')]//parent::div//p
+${lb_colorways}    //h4[contains(.,'Colorways')]//parent::div//p
+${lb_biblioteca_de_imagens}    //h4[contains(.,'Biblioteca de imagens')]//parent::div//p
+${lb_marcação}    //h4[contains(.,'Marcação')]//parent::div//p
+${lb_usuários}    //h4[contains(.,'Usuários')]//parent::div//p
+
 ${icon_history}     //span[contains(.,'HISTORIA')]//parent::div
 ${icon_approach}    //span[contains(.,'ENFOQUE')]//parent::div
 ${icon_culture}     //span[contains(.,'CULTURA')]//parent::div
 ${icon_method}      //span[contains(.,'METODOLOGIA')]//parent::div
 
 #--- all locator of elements with selecting label Solo
+${title_solo_1}    //div[@id="plan-solo"]
+${description_solo}     //h2[contains(.,'SOLO')]//parent::div//p[@class="plan-description"]
 ${label_solo_turnaround_time}         //h2[contains(.,'SOLO')]//parent::div//div[@class='selling-point-item' and contains(.,'Tempo de resposta')]
 ${label_solo_imageprice_from}         //h2[contains(.,'SOLO')]//parent::div//div[@class='selling-point-item' and contains(.,'Preço da imagem desde')]
 ${label_solo_monthly_subscription}    //h2[contains(.,'SOLO')]//parent::div//div[@class='selling-point-item' and contains(.,'Assinatura mensal')]
@@ -53,6 +62,8 @@ ${btn_solo_get_started_now}           //h2[contains(.,'SOLO')]//parent::div//a[c
 ${btn_solo_free_trial}                //h2[contains(.,'SOLO')]//parent::div//a[contains(., 'TESTE GRATUITO')]
 
 #--- all locator of elements with selecting label Professional
+${title_professional}    //div[@id="plan-pro"]
+${description_professional}     //h2[contains(.,'PROFESSIONAL')]//parent::div//p[@class="plan-description"]
 ${label_professional_turnaround_time}         //h2[contains(.,'PROFESSIONAL')]//parent::div//div[@class='selling-point-item' and contains(.,'Tempo de resposta')]
 ${label_professional_imageprice_from}         //h2[contains(.,'PROFESSIONAL')]//parent::div//div[@class='selling-point-item' and contains(.,'Preço da imagem desde')]
 ${label_professional_monthly_subscription}    //h2[contains(.,'PROFESSIONAL')]//parent::div//div[@class='selling-point-item' and contains(.,'Assinatura mensal')]
@@ -73,6 +84,8 @@ ${cartitem_product_onboarding}                //a[@href='#onboarding']
 ${cartitem_product_advanced_onboarding}       //a[@href='#onboarding-advanced']
 
 #--- all locator of elements with selecting label Enterprise
+${title_enterprise}    //div[@id="plan-ent"]
+${description_enterprise}     //h2[contains(.,'ENTERPRISE')]//parent::div//p[@class="plan-description"]
 ${label_professional_turnaround_time}         //h2[contains(.,'ENTERPRISE')]//parent::div//div[@class='selling-point-item' and contains(.,'Tempo de resposta')]
 ${label_professional_imageprice_from}         //h2[contains(.,'ENTERPRISE')]//parent::div//div[@class='selling-point-item' and contains(.,'Preço da imagem desde')]
 ${label_professional_monthly_subscription}    //h2[contains(.,'ENTERPRISE')]//parent::div//div[@class='selling-point-item' and contains(.,'Assinatura mensal')]

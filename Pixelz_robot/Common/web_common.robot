@@ -201,18 +201,18 @@ Resource    ../Resources/import.robot
     Switch Window    locator=NEW    timeout=None    browser=CURRENT
 
 [Common] - Compare 2 lists with each other
-    [Arguments]    @{list_elements}
-    @{list_elements}    Get WebElements    //ul[@class='plan-feature']//span[@class='option-mark']
-    @{MyList}    Create List      
+    [Arguments]    @{list_elements_locator}
+    @{list_elements}    Get WebElements    @{list_elements_locator}
+    @{MyList}    Create List
     FOR    ${i}    IN    @{list_elements}
     ${css}=         Get WebElement    ${i}
     ${prop_val}=    Call Method       ${css}    value_of_css_property    background-color
     Append To List    ${MyList}    ${prop_val}
     END
-    @{list_color}    create list    rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)
+    @{list_color}    create list    rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)
     ${ls1}    Create List    @{MyList}
     ${ls2}    Create List    @{list_color}
-    Lists Should Be Equal    ${ls1}      ${ls2}         2
+    Lists Should Be Equal    ${ls1}      ${ls2}         Color is not as required
 
 [Common] - Scroll page till go to bottom
     [Documentation]    Scroll page till go to bottom
