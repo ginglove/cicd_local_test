@@ -2,7 +2,8 @@
 Documentation  This is some basic infor about the whole suite
 Library         SeleniumLibrary
 Resource      ../Keywords/keywords.robot
-Suite Teardown      Close Browser
+Test Setup      [Common] - Open Chrome Browser with mode        https://www.pixelz.com/
+Test Teardown       Close Browser
 
 
 
@@ -28,8 +29,7 @@ Suite Teardown      Close Browser
 #Check when click on Rectangle icon of Our customers love us! item
 #Check when click on Creative Force link of Our customers love us! item
 #From PX_00113 to PX_00132
-PX_00113
-    [Setup]         Open Browser     https://www.pixelz.com/      ${browser}
+PX_00113 
 #    Click Element           ${Popup_btn_Accept}
     [KW_114] - Scroll Page To Location Common           0    7000
     Sleep       5s
@@ -37,7 +37,6 @@ PX_00113
 
 
 PX_00114
-    [Setup]         Open Browser     https://www.pixelz.com/      ${browser}
 #    Click Element           ${Popup_btn_Accept}
     [KW_114] - Scroll Page To Location Common           0    7000
     Sleep       5s
@@ -45,7 +44,6 @@ PX_00114
 
 
 PX_00115
-    [Setup]         Open Browser     https://www.pixelz.com/      ${browser}
 #    Click Element           ${Popup_btn_Accept}
     [KW_114] - Scroll Page To Location Common           0    7000
     Sleep       5s
@@ -54,7 +52,6 @@ PX_00115
 
 
 PX_00116
-    [Setup]         Open Browser     https://www.pixelz.com/      ${browser}
 #    Click Element           ${Popup_btn_Accept}
     [KW_114] - Scroll Page To Location Common           0    7000
     Sleep       5s
@@ -62,7 +59,6 @@ PX_00116
 
 
 PX_00117
-    [Setup]         Open Browser     https://www.pixelz.com/      ${browser}
 #    Click Element           ${Popup_btn_Accept}
     [KW_114] - Scroll Page To Location Common           0    7000
     Sleep       5s
@@ -86,14 +82,12 @@ PX_00117
 
 
 PX_00125
-    [Setup]         Open Browser     https://www.pixelz.com/      ${browser}
 #    Click Element           ${Popup_btn_Accept}
     [KW_114] - Scroll Page To Location Common           0    7000
     Sleep       5s
     [KW_116] - CLick Element Common        css=div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(3) > a
 
 PX_00126
-    [Setup]         Open Browser     https://www.pixelz.com/      ${browser}
 #    Click Element           ${Popup_btn_Accept}
     [KW_114] - Scroll Page To Location Common           0    7000
     Sleep       5s
@@ -105,20 +99,17 @@ PX_00126
 
 
 PX_00130
-    [Setup]         Open Browser     https://www.pixelz.com/      ${browser}
 #    Click Element           ${Popup_btn_Accept}
     [KW_114] - Scroll Page To Location Common           0    7000
     Sleep       5s
     [KW_116] - CLick Element Common        css=div.col-md-3.col-sm-6.mb-xs-24 > a:nth-child(1) > svg:nth-child(1)
 
 PX_00131
-    [Setup]         Open Browser     https://www.pixelz.com/      ${browser}
 #    Click Element           ${Popup_btn_Accept}
     [KW_114] - Scroll Page To Location Common           0    7000
     Sleep       5s
     [KW_116] - CLick Element Common        css=div.col-md-3.col-sm-6.mb-xs-24 > a:nth-child(1) > svg:nth-child(2)
 PX_00132
-    [Setup]         Open Browser     https://www.pixelz.com/      ${browser}
 #    Click Element           ${Popup_btn_Accept}
     [KW_114] - Scroll Page To Location Common           0    7000
     Sleep       5s

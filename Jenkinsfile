@@ -13,6 +13,7 @@ pipeline {
                 sh  'echo "test"'
                 sh  'google-chrome --version'
                 sh  'chromedriver --version'
+                sh  'pip3.7 list'
             }
         }
         stage('Verify Robot Version'){
