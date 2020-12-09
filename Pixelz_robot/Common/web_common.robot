@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource    ../resource/import.robot
+Resource    ../Resources/import.robot
 
 *** Keywords ***
 
@@ -14,27 +14,27 @@ Resource    ../resource/import.robot
     Set Window Size    800    700
 
 [Common] - Open Chrome Browser with mode
-    [Documentation]    Open Chrome Browser with mode with arguments ${url}
-    [Arguments]     ${url}
-    ${browser}    convert to lowercase    ${browser}
-    ${true}       convert to boolean      true
-    ${list_options}      Create List    --no-sandbox	--headless     --ignore-certificate-errors      --disable-web-security     --disable-impl-side-painting    --enable-features=NetworkService,NetworkServiceInProcess
+    [Arguments]        ${url}
+     Run Keyword If    '${browser}' == 'chrome'        Run Keywords
+     ...               Open Browser                    ${url}                                            ${browser}
+     ...               AND                             [Common] - Maximize browser size to fit screen
+     ...               ELSE IF                         '${browser}' == 'headlesschrome'                  Run keywords
+     ...               [Common] - Open Chrome Headless Browser      ${url}
+     ...               AND                             [Common] - Maximize browser size to fit screen
+     ...               ELSE                            should be true                                    ${FALSE}
 
-    ${args}        Create Dictionary    args=${list_options}
-    ${desired_capabilities}     create dictionary
-    ...         acceptSslCerts=${true}
-    ...         acceptInsecureCerts=${true}
-    ...         ignore-certificate-errors=${true}
-    ...         chromeOptions=${args}
-
-    Run Keyword If   '${browser}' == 'chrome'            Run Keywords
-    ...             Open Browser    ${url}    ${browser}
-    ...        AND    [Common] - Maximize browser size to fit screen
-    ...     ELSE IF   '${browser}' == 'headlesschrome'    Run keywords
-    ...             Open Browser    ${url}    ${browser}    desired_capabilities=${desired_capabilities}
-#    ...             Open Chrome Headless Browser    ${url}
-    ...        AND     [Common] - Maximize browser size to fit screen
-    ...     ELSE        should be true  ${FALSE}
+[Common] - Open Chrome Headless Browser 
+    [Arguments]        ${url}
+    ${chrome_options}=  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
+    Call Method    ${chrome_options}    add_argument    test-type
+    Call Method    ${chrome_options}    add_argument    --disable-extensions
+    Call Method    ${chrome_options}    add_argument    --headless
+    Call Method    ${chrome_options}    add_argument    --disable-gpu
+    Call Method    ${chrome_options}    add_argument    --no-sandbox
+    Call Method    ${chrome_options}    add_argument    --disable-dev-shm-usage
+    Create Webdriver                                  Chrome               chrome_options=${chrome_options}
+    [Common] - Maximize browser size to fit screen
+    Go To                                             ${url}
 
 [Common] - Click element
     [Documentation]    Click an element on the website with argument ${element_loc}
