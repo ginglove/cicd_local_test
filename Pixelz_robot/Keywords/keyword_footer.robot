@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource    ../resource/import.robot
+Resource    ../Resources/import.robot
 
 ### --- All keywords of footer part
 *** Keywords ***

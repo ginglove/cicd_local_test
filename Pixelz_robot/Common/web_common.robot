@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource    ../resource/import.robot
+Resource    ../Resources/import.robot
 
 *** Keywords ***
 
@@ -22,11 +22,6 @@ Resource    ../resource/import.robot
      ...               [Common] - Open Chrome Headless Browser      ${url}
      ...               AND                             [Common] - Maximize browser size to fit screen
      ...               ELSE                            should be true                                    ${FALSE}
-
-
-[Common] - Maximize browser size to fit screen
-    Set window position    0       0
-    Set window size        1440    900
 
 [Common] - Open Chrome Headless Browser 
     [Arguments]        ${url}
