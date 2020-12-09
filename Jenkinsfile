@@ -3,7 +3,7 @@ pipeline {
 //execution and that each stage directive must specify its own agent section.
     agent {docker 
            {
-               image 'ginglove/docker_robot_python_37:1.0.1'
+               image 'ginglove/docker_robot_python_37:1.0'
                args '-u root --privileged'
            }
           }
@@ -13,6 +13,7 @@ pipeline {
                 sh  'echo "test"'
                 sh  'google-chrome --version'
                 sh  'chromedriver --version'
+                sh  'pip3.7 list'
             }
         }
         stage('Verify Robot Version'){
