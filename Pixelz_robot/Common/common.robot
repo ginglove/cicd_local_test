@@ -21,11 +21,6 @@ Resource    ../Resources/import.robot
      ...               AND                             [Common] - Maximize browser size to fit screen
      ...               ELSE                            should be true                                    ${FALSE}
 
-
-[Common] - Maximize browser size to fit screen
-    Set window position    0       0
-    Set window size        1440    900
-
 [Common] - Open Chrome Headless Browser 
     [Arguments]        ${url}
     ${chrome_options}=  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
