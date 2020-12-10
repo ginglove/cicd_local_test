@@ -5,7 +5,7 @@ Resource    ../Resources/import.robot
 [Keyword] - Hover on "FaceBook" icon
    [Common] - Mouse over element    ${icon_facebook}
    sleep                       2
-   [Common] - Verify color of element   ${icon_facebook}    color   rgba(255, 255, 255, 1)
+   [Common] - Verify color of element   ${icon_facebook}    color     rgba(146, 195, 106, 1)
    sleep                       2
 
 [Keyword] - Click on "FaceBook" icon
