@@ -39,8 +39,20 @@ Resource    ../Resources/import.robot
    sleep                       3
    [Common] - Mouse over element    ${btn_learnmore}
     sleep                       4
-    [Common] - Verify color of element    ${btn_learnmore}     background     rgba(146, 195, 106, 1)
+    [Common] - Verify color of element    ${btn_learnmore}     color     rgba(255, 255, 255, 1)
     sleep                       2
+
+#[Keyword] - Hover on "Learn More" button
+   #[Common] - Click element    ${dropdownlist_aboutus}
+    #sleep                       2
+   #[Common] - Click element    ${dropdownlistItem_csr}
+    #sleep                       4
+   #execute javascript   window.scrollTo(0,3500)
+   #sleep                       3
+   #[Common] - Mouse over element    ${btn_learnmore}
+    #sleep                       4
+    #[Common] - Verify color of element    ${btn_learnmore}     background     rgba(146, 195, 106, 1)
+    #sleep                       2
 
 [Keyword] - Click on "Learn More" button
    [Common] - Click element    ${dropdownlist_aboutus}

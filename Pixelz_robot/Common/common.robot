@@ -12,28 +12,25 @@ Resource    ../Resources/import.robot
     Set Window Size    1440    900
 
 [Common] - Open Chrome Browser with mode
-    [Arguments]        ${url}
-     Run Keyword If    '${browser}' == 'chrome'        Run Keywords
-     ...               Open Browser                    ${url}                                            ${browser}
-     ...               AND                             [Common] - Maximize browser size to fit screen
-     ...               ELSE IF                         '${browser}' == 'headlesschrome'                  Run keywords
-     ...               [Common] - Open Chrome Headless Browser      ${url}
-     ...               AND                             [Common] - Maximize browser size to fit screen
-     ...               ELSE                            should be true                                    ${FALSE}
+    [Arguments]     ${url}
+    ${browser}    convert to lowercase    ${browser}
+    ${true}       convert to boolean      true
+    ${list_options}      Create List    --no-sandbox	--headless     --ignore-certificate-errors      --disable-web-security     --disable-impl-side-painting    --enable-features=NetworkService,NetworkServiceInProcess
 
-[Common] - Open Chrome Headless Browser 
-    [Arguments]        ${url}
-    ${chrome_options}=  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
-    Call Method    ${chrome_options}    add_argument    test-type
-    Call Method    ${chrome_options}    add_argument    --disable-extensions
-    Call Method    ${chrome_options}    add_argument    --headless
-    Call Method    ${chrome_options}    add_argument    --disable-gpu
-    Call Method    ${chrome_options}    add_argument    --no-sandbox
-    Call Method    ${chrome_options}    add_argument    --disable-dev-shm-usage
-    Create Webdriver                                  Chrome               chrome_options=${chrome_options}
-    [Common] - Maximize browser size to fit screen
-    Go To                                             ${url}
+    ${args}        Create Dictionary    args=${list_options}
+    ${desired_capabilities}     create dictionary
+    ...         acceptSslCerts=${true}
+    ...         acceptInsecureCerts=${true}
+    ...         ignore-certificate-errors=${true}
+    ...         chromeOptions=${args}
 
+    Run Keyword If   '${browser}' == 'chrome'            Run Keywords
+    ...             Open Browser    ${url}    ${browser}
+    ...        AND    [Common] - Maximize browser size to fit screen
+    ...     ELSE IF   '${browser}' == 'headlesschrome'    Run keywords
+    ...             Open Browser    ${url}    ${browser}    desired_capabilities=${desired_capabilities}
+    ...        AND     [Common] - Maximize browser size to fit screen
+    ...     ELSE        should be true  ${FALSE}
 
 [Common] - Click element
     [Arguments]  ${element_loc}
@@ -114,3 +111,10 @@ Resource    ../Resources/import.robot
     ${css}=         Get WebElement    ${locator}
     ${prop_val}=    Call Method       ${css}    value_of_css_property    ${attribute name}
     [Return]    ${prop_val}
+
+[Common] - Verify element should contain text
+    [Documentation]    Verify element should contain text as required with arguments ${element_loc} and ${text}
+    ...    ${element_loc} is locator of element
+    ...    ${text} is expect text user to verify
+    [Arguments]    ${element_loc}    ${text}
+    wait until keyword succeeds    10s     1s    Element Should Contain    ${element_loc}    ${text}

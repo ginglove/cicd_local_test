@@ -1,4 +1,4 @@
 *** Variables ***
 ${url}    https://www.pixelz.com/
-${browser}    headlesschrome
-#headless
+#${browser}    headlesschrome
+${browser}    chrome

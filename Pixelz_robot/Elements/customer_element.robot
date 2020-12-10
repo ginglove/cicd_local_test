@@ -13,6 +13,7 @@ ${lm_polo}        css=a[href*='../case-studies/marcopolo']
 ${lm_open}        css=a[href*='../case-studies/open-for-vintage']
 ${lm_chairish}        css=a[href*='../case-studies/chairish']
 ${lm_babyshop}        css=a[href*='../case-studies/babyshop']
-${logo_trustpilot}
-${logo_trustscore}      css=a[id='profile-link']
+${logo_trustpilot}      //div[@class='top-container']/a
+${icon_next}        //div[@id='review-arrow-right']
+${icon_pre}        //div[@id='review-arrow-left']
 ${lm_seeoptions}      css=a[href*='https://www.pixelz.com/pricing/']

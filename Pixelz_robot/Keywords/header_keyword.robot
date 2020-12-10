@@ -2,6 +2,9 @@
 Resource    ../Resources/import.robot
 
 *** Keywords ***
+[Keyword] -
+    [Common] - Verify element should contain text       ${cb_customer_retouch}                      Retoque personalizado
+
 [Keyword] - Click on Logo Pixelz
     [Common] - Click element    ${logo}
     sleep                       2

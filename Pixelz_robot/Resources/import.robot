@@ -3,6 +3,7 @@
 ####    LIBRARY    ####
 Library           SeleniumLibrary
 Library           String
+Library             Collections
 
 ###    COMMON KEYWORDS    ###
 Resource    ../Common/common.robot

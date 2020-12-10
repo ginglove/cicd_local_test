@@ -3,7 +3,7 @@
 Resource         ../Resources/import.robot
 
 Test Setup       [Keyword] - Open browser
-Test Teardown    [Keyword] - Close browser
+#Test Teardown    [Keyword] - Close browser
 
 *** Test Cases ***
 [PX_00077] - Check when hover on "Learn More" link of "FOSSIL GROUP" item
