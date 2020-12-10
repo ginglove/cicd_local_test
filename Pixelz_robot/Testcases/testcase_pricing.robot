@@ -1,10 +1,10 @@
 *** Settings ***
 
-Resource           ../Resources/import.robot
-Test Setup         Run keywords
-...                [Keyword] - Open browser and access to homepage
-...                [Keyword] - Click on menu item pricing
-# Test Teardown    [Keyword] - Close browser
+Resource         ../Resources/import.robot
+Test Setup       Run keywords
+...              [Keyword] - Open browser and access to homepage
+...              [Keyword] - Click on menu item pricing
+Test Teardown    [Keyword] - Close browser
 
 ### --- All test cases of header part
 *** Test Cases ***
@@ -84,7 +84,7 @@ PX_00117 - Check when select label [Professional], radiobutton [Mesal], and valu
 PX_00118 - Check when select label [Professional], radiobutton [Mesal], and value="GBP" of dropdownlist [Moeda] at the same time
 
     [Keyword] - Select label Professional, radiobutton Mesal, and value GBP
-    
+
 PX_00119 - Check when select label [Professional], radiobutton [Mesal], and value="EUR" of dropdownlist [Moeda] at the same time
 
     [Keyword] - Select label Professional, radiobutton Mesal, and value EUR
