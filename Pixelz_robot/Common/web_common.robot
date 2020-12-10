@@ -209,9 +209,8 @@ Resource    ../Resources/import.robot
     ${prop_val}=    Call Method       ${css}    value_of_css_property    background-color
     Append To List    ${MyList}    ${prop_val}
     END
-    @{list_color}    create list    rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(146, 195, 106, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)  rgba(218, 218, 218, 1)
     ${ls1}    Create List    @{MyList}
-    ${ls2}    Create List    @{list_color}
+    ${ls2}    Create List    @{list_cb_color_expect}
     Lists Should Be Equal    ${ls1}      ${ls2}         Color is not as required
 
 [Common] - Scroll page till go to bottom
@@ -220,3 +219,8 @@ Resource    ../Resources/import.robot
     sleep                 1
     execute javascript    window.scrollTo(0,document.body.scrollHeight)
     sleep                 3
+
+[Common] - Wait for element to appear on page
+     [Arguments]  ${locator}      ${timeout}=30
+     [Documentation]    Try to wait for element at ${locator} with the total timeout of ${timeout}
+     wait until keyword succeeds    ${timeout}s     1s       element should be visible       ${locator}
