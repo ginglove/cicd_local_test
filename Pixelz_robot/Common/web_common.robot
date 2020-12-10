@@ -201,8 +201,8 @@ Resource    ../Resources/import.robot
     Switch Window    locator=NEW    timeout=None    browser=CURRENT
 
 [Common] - Compare 2 lists with each other
-    [Arguments]    @{list_elements_locator}
-    @{list_elements}    Get WebElements    @{list_elements_locator}
+    [Arguments]    ${list_elements_locator}    @{list_cb_color_expect}
+    @{list_elements}    Get WebElements    ${list_elements_locator}
     @{MyList}    Create List
     FOR    ${i}    IN    @{list_elements}
     ${css}=         Get WebElement    ${i}
