@@ -8,7 +8,7 @@ Resource    ../Resources/import.robot
    [Common] - Click element    ${dropdownlistItem_origin}
     sleep                       2
    execute javascript   window.scrollTo(0,2300)
-   sleep                       3
+   sleep                       5
    [Common] - Click element    ${photo}
     sleep                       2
 
