@@ -89,9 +89,10 @@ ${cartitem_product_advanced_onboarding}       //a[@href='#onboarding-advanced']
 @{list_professional_cb_color_expect}          rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)
 
 #--- all locator of elements with selecting label Enterprise
-${title_enterprise}                         //div[@id="plan-ent"]
+${title_enterprise_1}                         //div[@id="plan-ent"]
 ${description_enterprise}                   //h2[contains(.,'ENTERPRISE')]//parent::div//p[@class="plan-description"]
 ${label_enterprise_turnaround_time}         //h2[contains(.,'ENTERPRISE')]//parent::div//div[@class='selling-point-item' and contains(.,'Tempo de resposta')]
 ${label_enterprise_imageprice_from}         //h2[contains(.,'ENTERPRISE')]//parent::div//div[@class='selling-point-item' and contains(.,'Preço da imagem desde')]
 ${label_enterprise_monthly_subscription}    //h2[contains(.,'ENTERPRISE')]//parent::div//div[@class='selling-point-item' and contains(.,'Assinatura mensal')]
 ${btn_get_quote}                            //a[contains(.,'OBTER COTAÇÃO')]
+@{list_enterprise_cb_color_expect}           rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)

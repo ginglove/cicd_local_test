@@ -129,3 +129,62 @@ PX_00129 - Check when select label [Professional], radiobutton [Anual], and valu
 
     [Keyword] - Select label Professional, radiobutton Anual, and value NOK
 
+PX_00130 - Check display text when select label [Enterprise] on the screen
+
+    [Keyword] - Select label Enterprise on the screen
+
+PX_00131 - Check when select label [Enterprise], radiobutton [Mensal], and value="USD" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Mensal, and value USD
+
+PX_00132 - Check when select label [Enterprise], radiobutton [Mensal], and value="CAD" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Mensal, and value CAD
+
+PX_00133 - Check when select label [Enterprise], radiobutton [Mensal], and value="GBP" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Mensal, and value GBP
+
+PX_00134 - Check when select label [Enterprise], radiobutton [Mensal], and value="EUR" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Mensal, and value EUR
+
+PX_00135 - Check when select label [Enterprise], radiobutton [Mensal], and value="DKK" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Mensal, and value DKK
+
+PX_00136 - Check when select label [Enterprise], radiobutton [Mensal], and value="SEK" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Mensal, and value SEK
+
+PX_00137 - Check when select label [Enterprise], radiobutton [Mensal], and value="NOK" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Mensal, and value NOK
+
+PX_00138 - Check when select label [Enterprise], radiobutton [Anual], and value="USD" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Anual, and value USD
+
+PX_00139 - Check when select label [Enterprise], radiobutton [Anual], and value="CAD" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Anual, and value CAD
+
+PX_00140 - Check when select label [Enterprise], radiobutton [Anual], and value="GBP" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Anual, and value GBP
+
+PX_00141 - Check when select label [Enterprise], radiobutton [Anual], and value="EUR" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Anual, and value EUR
+
+PX_00142 - Check when select label [Enterprise], radiobutton [Anual], and value="DKK" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Anual, and value DKK
+
+PX_00143 - Check when select label [Enterprise], radiobutton [Anual], and value="SEK" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Anual, and value SEK
+
+PX_00144 - Check when select label [Enterprise], radiobutton [Anual], and value="NOK" of dropdownlist [Moeda] at the same time
+
+    [Keyword] - Select label Enterprise, radiobutton Anual, and value NOK
