@@ -147,11 +147,11 @@ Resource    ../Resources/import.robot
     sleep                       2
     execute javascript   window.scrollTo(0,1500)
     sleep                       3
-    [Common] - Verify element should contain text   ${content_bestseller}     We’ve seen a huge increase in the quality of creative work produced by our team and that is largely thanks to the dependability of Pixelz.
+    [Common] - Verify element should contain text   ${content_catch}     We’ve seen a huge increase in the quality of creative work produced by our team and that is largely thanks to the dependability of Pixelz.
     sleep       2
-    [Common] - Verify element should contain text   ${author_bestseller}    TRISTAN BOLLE AND KRISH JAIMANGAL
+    [Common] - Verify element should contain text   ${author_catch}    TRISTAN BOLLE AND KRISH JAIMANGAL
     sleep       2
-    [Common] - Verify element should contain text   ${lm_bestseller}     LEARN MORE
+    [Common] - Verify element should contain text   ${lm_catch}     LEARN MORE
     sleep       2
 
 [Keyword] - Hover on "Learn More" link of "CATCH" item

@@ -1,7 +1,7 @@
 *** Variables ***
-
+#--- conpoment ---
+${footer}       //section[@class='bg-dark pixelz-footer']//div[@class='container']
 #--- icon
-
 ${icon_facebook}    //a[@href='https://www.facebook.com/pixelz.inc']
 ${icon_twitter}    //a[@href='https://twitter.com/pixelz_inc']
 ${icon_linkedin}    //a[@href='https://www.linkedin.com/company/pixelz_inc']

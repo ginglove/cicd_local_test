@@ -2,10 +2,46 @@
 Resource    ../Resources/import.robot
 
 *** Keywords ***
+[Keyword] - Observe the Footer
+    [Common] - Verify element should contain text   ${footer}     PIXELZ INC
+    sleep       3
+    [Common] - Verify element should contain text   ${footer}     237 A St #47682, San Diego, CA 92101
+    sleep       3
+    [Common] - Verify element should contain text   ${footer}     LEGAL
+    sleep       3
+    [Common] - Verify element should contain text   ${footer}     Terms
+    sleep       3
+    [Common] - Verify element should contain text   ${footer}     Privacy
+    sleep       3
+    [Common] - Verify element should contain text   ${footer}     Cookies
+    sleep       3
+    [Common] - Verify element should contain text   ${footer}     PLANS
+    sleep       2
+    [Common] - Verify element should contain text   ${footer}     SOLO
+    sleep       2
+    [Common] - Verify element should contain text   ${footer}     Professional
+    sleep       2
+    [Common] - Verify element should contain text   ${footer}     Enterprise
+    sleep       2
+    [Common] - Verify element should contain text   ${footer}     HELP
+    sleep       2
+    [Common] - Verify element should contain text   ${footer}     FAQ
+    sleep       2
+    [Common] - Verify element should contain text   ${footer}     Support
+    sleep       2
+     [Common] - Verify element should contain text   ${footer}     API Documentation
+    sleep       2
+    [Common] - Verify element should contain text   ${footer}     ABOUT
+    sleep       2
+    [Common] - Verify element should contain text   ${footer}     Blog
+    sleep       2
+    [Common] - Verify element should contain text   ${footer}     Origin
+    sleep       2
+
 [Keyword] - Hover on "FaceBook" icon
    [Common] - Mouse over element    ${icon_facebook}
    sleep                       2
-   [Common] - Verify color of element   ${icon_facebook}    color     rgba(146, 195, 106, 1)
+   [Common] - Verify color of element   ${icon_facebook}    color     rgba(255, 255, 255, 1)
    sleep                       2
 
 [Keyword] - Click on "FaceBook" icon

@@ -5,6 +5,10 @@ Test Setup       [Keyword] - Open browser
 Test Teardown    [Keyword] - Close browser
 
 *** Test Cases ***
+
+[PX_00136] - Check the Components of footer is displayed as requriment
+    [Keyword] - Observe the Footer
+
 [PX_00137] - Check when hover on FaceBook icon
     [Keyword] - Hover on "FaceBook" icon
 

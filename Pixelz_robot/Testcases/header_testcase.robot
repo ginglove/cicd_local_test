@@ -154,7 +154,7 @@ Test Teardown    [Keyword] - Close browser
     [Keyword] - Click on Danmark item of Location list
 
 [PX_00052] - Check when hover on Deutschland of LOCATION list
-    [Keyword] - Hover on Deutschland item of Location list+
+    [Keyword] - Hover on Deutschland item of Location list
 
 [PX_00054] - Check when click on Deutschland of LOCATION list
     [Keyword] - Click on Deutschland item of Location list
