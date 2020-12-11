@@ -30,7 +30,7 @@ ${author_catch}        //h6[contains(.,'Tristan Bolle and Krish Jaimangal')]
 ${lm_catch}        css=a[href*='../case-studies/catch-of-the-day']
 #---
 ${content_polo}        //p[contains(.,'The people at Pixelz have a very professional attitude, high quality standards, and are very flexible. They really work for you and they really want to help you.')]
-${author_polo}        //h6[contains(.,'Tristan Bolle and Krish Jaimangal')]
+${author_polo}        //h6[contains(.,'Michael Zubcic')]
 ${lm_polo}        css=a[href*='../case-studies/marcopolo']
 #---
 ${content_open}        //p[contains(.,'We can move forward with confidence that we’ve got a really seriously good solution in place that provides us with a very, very substantial competitive advantage.')]

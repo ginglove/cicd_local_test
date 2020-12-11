@@ -199,11 +199,11 @@ Resource    ../Resources/import.robot
     sleep                       2
     execute javascript   window.scrollTo(0,1500)
     sleep                       3
-    [Common] - Verify element should contain text   ${content_bestseller}     We can move forward with confidence that we’ve got a really seriously good solution in place that provides us with a very, very substantial competitive advantage.
+    [Common] - Verify element should contain text   ${content_open}     We can move forward with confidence that we’ve got a really seriously good solution in place that provides us with a very, very substantial competitive advantage.
     sleep       2
-    [Common] - Verify element should contain text   ${author_bestseller}    COLIN SAUNDERS
+    [Common] - Verify element should contain text   ${author_open}    COLIN SAUNDERS
     sleep       2
-    [Common] - Verify element should contain text   ${lm_bestseller}     LEARN MORE
+    [Common] - Verify element should contain text   ${lm_open}     LEARN MORE
     sleep       2
 
 [Keyword] - Hover on "Learn More" link of "OPEN FOR VINTAGE" item
