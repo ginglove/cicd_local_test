@@ -20,4 +20,4 @@ Resource    ../Keywords/keyword_browser.robot
 Resource    ../Keywords/keyword_footer.robot
 Resource    ../Keywords/keyword_header.robot
 Resource    ../Keywords/keyword_pricing.robot
-
+Resource    ../Keywords/keyword_popup_pricing.robot

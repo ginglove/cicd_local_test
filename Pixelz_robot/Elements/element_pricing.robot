@@ -9,6 +9,7 @@ ${radiobtn_payment_monthly}     //label[@for='payment_monthly']
 ${radiobtn_payment_annually}    //label[@for='payment_annually']
 ${ddlist_currency}              //select[@id='currency']
 ${btn_compare_plans}            //a[contains(.,'COMPARE PLANOS')]
+${title_compare_plans}          Pixelz - Compare Plans
 
 ${list_elements_locator}         //ul[@class='plan-feature']//span[@class='option-mark']
 ${cb_self_service_platform}      //p[contains(.,'Plataforma de autoatendimento')]
@@ -46,6 +47,7 @@ ${icon_history}     //span[contains(.,'HISTORIA')]//parent::div
 ${icon_approach}    //span[contains(.,'ENFOQUE')]//parent::div
 ${icon_culture}     //span[contains(.,'CULTURA')]//parent::div
 ${icon_method}      //span[contains(.,'METODOLOGIA')]//parent::div
+${description_icon}    //div[@class='tabbed-content icon-tabs']
 
 #--- all locator of elements with selecting label Solo
 ${title_solo_1}                       //div[@id="plan-solo"]
@@ -55,14 +57,15 @@ ${label_solo_imageprice_from}         //h2[contains(.,'SOLO')]//parent::div//div
 ${label_solo_monthly_subscription}    //h2[contains(.,'SOLO')]//parent::div//div[@class='selling-point-item' and contains(.,'Assinatura mensal')]
 ${icon_solo_imageprice_from}          //h2[contains(.,'SOLO')]//parent::div//a[@class='calculator-link']
 ${btn_close_solo_imagepricefrom}      //h2[contains(.,'SOLO')]//parent::div//a[@class='btn-close']
-${cb_solo_basic_retouch}              //h2[contains(.,'SOLO')]//parent::div//input[@id='solo-add-on-0']
-${cb_solo_invisible_mannequin}        //h2[contains(.,'SOLO')]//parent::div//input[@id='solo-add-on-1']
-${cb_solo_clipping_path}              //h2[contains(.,'SOLO')]//parent::div//input[@id='solo-add-on-2']
-${cb_solo_shadow}                     //h2[contains(.,'SOLO')]//parent::div//input[@id='solo-add-on-3']
+${cb_solo_basic_retouch}              //h2[contains(.,'SOLO')]//parent::div//label[@for='solo-add-on-0']//span[1]
+${cb_solo_invisible_mannequin}        //h2[contains(.,'SOLO')]//parent::div//label[@for='solo-add-on-1']//span[1]
+${cb_solo_clipping_path}              //h2[contains(.,'SOLO')]//parent::div//label[@for='solo-add-on-2']//span[1]
+${cb_solo_shadow}                     //h2[contains(.,'SOLO')]//parent::div//label[@for='solo-add-on-3']//span[1]
 ${label_solo_sub_total}               //h2[contains(.,'SOLO')]//parent::div//span[@class='sub-total-image-price']
 ${label_solo_total}                   //h2[contains(.,'SOLO')]//parent::div//span[@class='total-image-price']
 ${btn_solo_get_started_now}           //h2[contains(.,'SOLO')]//parent::div//a[contains(., 'COMECE AGORA')]
 ${btn_solo_free_trial}                //h2[contains(.,'SOLO')]//parent::div//a[contains(., 'TESTE GRATUITO')]
+${title_free_trial}                   Pixelz Administration 
 @{list_solo_cb_color_expect}          rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)
 
 #--- all locator of elements with selecting label Professional
@@ -73,26 +76,32 @@ ${label_professional_imageprice_from}         //h2[contains(.,'PROFESSIONAL')]//
 ${label_professional_monthly_subscription}    //h2[contains(.,'PROFESSIONAL')]//parent::div//div[@class='selling-point-item' and contains(.,'Assinatura mensal')]
 ${icon_professional_imagepricefrom}           //h2[contains(.,'PROFESSIONAL')]//parent::div//a[@class='calculator-link']
 ${btn_close_professional_imagepricefrom}      //h2[contains(.,'PROFESSIONAL')]//parent::div//a[@class='btn-close']
-${cb_professional_invisible_mannequin}        //h2[contains(.,'PROFESSIONAL')]//parent::div//input[@id='add-on-1']
-${cb_professional_clipping_path}              //h2[contains(.,'PROFESSIONAL')]//parent::div//input[@id='add-on-2']
-${cb_professional_shadow}                     //h2[contains(.,'PROFESSIONAL')]//parent::div//input[@id='add-on-3']
-${cb_professional_essential_retouch}          //h2[contains(.,'PROFESSIONAL')]//parent::div//input[@id='add-on-4']
-${cb_professional_advanced_retouch}           //h2[contains(.,'PROFESSIONAL')]//parent::div//input[@id='add-on-5']
-${label_solo_sub_total}                       //h2[contains(.,'PROFESSIONAL')]//parent::div//span[@class='sub-total-image-price']
-${label_solo_total}                           //h2[contains(.,'PROFESSIONAL')]//parent::div//span[@class='total-image-price']
-${btn_solo_get_started_now}                   //h2[contains(.,'PROFESSIONAL')]//parent::div//a[contains(., 'COMECE AGORA')]                                              
-${btn_solo_free_trial}                        //h2[contains(.,'PROFESSIONAL')]//parent::div//a[contains(., 'TESTE GRATUITO')]
+${cb_professional_invisible_mannequin}        //h2[contains(.,'PROFESSIONAL')]//parent::div//label[@for='add-on-1']//span[1]
+${cb_professional_clipping_path}              //h2[contains(.,'PROFESSIONAL')]//parent::div//label[@for='add-on-2']//span[1]
+${cb_professional_shadow}                     //h2[contains(.,'PROFESSIONAL')]//parent::div//label[@for='add-on-3']//span[1]
+${cb_professional_essential_retouch}          //h2[contains(.,'PROFESSIONAL')]//parent::div//label[@for='add-on-4']//span[1]
+${cb_professional_advanced_retouch}           //h2[contains(.,'PROFESSIONAL')]//parent::div//label[@for='add-on-5']//span[1]
+${label_professional_sub_total}               //h2[contains(.,'PROFESSIONAL')]//parent::div//span[@class='sub-total-image-price']
+${label_professional_total}                   //h2[contains(.,'PROFESSIONAL')]//parent::div//span[@class='total-image-price']
+${btn_professional_get_started_now}           //h2[contains(.,'PROFESSIONAL')]//parent::div//a[contains(., 'COMECE AGORA')]                                              
+${btn_professional_free_trial}                //h2[contains(.,'PROFESSIONAL')]//parent::div//a[contains(., 'TESTE GRATUITO')]
+
 ${cartitem_product_training}                  //a[@href='#product-training']
 ${cartitem_customer_specification}            //a[@href='#custom-specification']
 ${cartitem_product_onboarding}                //a[@href='#onboarding']
 ${cartitem_product_advanced_onboarding}       //a[@href='#onboarding-advanced']
 @{list_professional_cb_color_expect}          rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)    rgba(218, 218, 218, 1)
+${dialog_treinamento_de_produto}              //div[@id='product-training']//div
+${dialog_especificação_Personalizada}         //div[@id='custom-specification']//div
+${dialog_onboarding}                          //div[@id='onboarding']//div
+${dialog_onboarding_avançado}                 //div[@id='onboarding-advanced']//div
 
 #--- all locator of elements with selecting label Enterprise
-${title_enterprise_1}                         //div[@id="plan-ent"]
+${title_enterprise_1}                       //div[@id="plan-ent"]
 ${description_enterprise}                   //h2[contains(.,'ENTERPRISE')]//parent::div//p[@class="plan-description"]
 ${label_enterprise_turnaround_time}         //h2[contains(.,'ENTERPRISE')]//parent::div//div[@class='selling-point-item' and contains(.,'Tempo de resposta')]
 ${label_enterprise_imageprice_from}         //h2[contains(.,'ENTERPRISE')]//parent::div//div[@class='selling-point-item' and contains(.,'Preço da imagem desde')]
 ${label_enterprise_monthly_subscription}    //h2[contains(.,'ENTERPRISE')]//parent::div//div[@class='selling-point-item' and contains(.,'Assinatura mensal')]
 ${btn_get_quote}                            //a[contains(.,'OBTER COTAÇÃO')]
-@{list_enterprise_cb_color_expect}           rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)
+${title_get_quote}                          Pixelz: Enterprise Product Imaged Editing Quote Request
+@{list_enterprise_cb_color_expect}          rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)    rgba(146, 195, 106, 1)

@@ -188,3 +188,54 @@ PX_00143 - Check when select label [Enterprise], radiobutton [Anual], and value=
 PX_00144 - Check when select label [Enterprise], radiobutton [Anual], and value="NOK" of dropdownlist [Moeda] at the same time
 
     [Keyword] - Select label Enterprise, radiobutton Anual, and value NOK
+
+PX_00145 - Check when click on button [Compare Planos]
+
+    [Keyword] - Click on button Compare Planos
+
+PX_00146 - Check when click on cartItem [Treinamento de produto]
+
+    [Keyword] - Click on button Treinamento de produto
+
+PX_00147 - Check when click on cartItem [Especificação Personalizada]
+
+    [Keyword] - Click on button Especificação Personalizada
+
+PX_00148 - Check when click on cartItem [Onboarding]
+
+    [Keyword] - Click on button Onboarding
+
+PX_00149 - Check when click on cartItem [Onboarding (avançado)]
+
+    [Keyword] - Click on button Onboarding avançado
+
+PX_00150 - Check when click on icon [Historia]
+
+    [Keyword] - Click on button Historia
+
+PX_00151 - Check when click on icon [Enfoque]
+
+    [Keyword] - Click on button Enfoque
+
+PX_00152 - Check when click on icon [Cultura]
+
+    [Keyword] - Click on button Cultura
+
+PX_00153 - Check when click on icon [Metodologia]
+
+    [Keyword] - Click on button Metodologia
+
+PX_00154 - Check when click on button [Obter Cotação]
+
+    [Keyword] - Click on button Obter Cotação
+
+PX_00155 - Check when click on button [Teste Gratuito] with label [Solo]
+
+    [Keyword] - Click on button Teste Gratuito with label Solo
+
+PX_00156 - Check when click on button [Teste Gratuito] with label [Professional]
+
+    [Keyword] - Click on button Teste Gratuito with label Professional
+
+[Keyword] - Click on button Teste Gratuito with label Professional
+

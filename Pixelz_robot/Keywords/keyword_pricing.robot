@@ -2400,7 +2400,7 @@ Resource    ../Resources/import.robot
     [Common] - Verify element should contain text       ${lb_usuários}                              C$12
     sleep                                               1
     [Common] - Verify element should contain text       ${lb_usuários}                              /Mês
-    sleep                                               1                      
+    sleep                                               1                                           
 
 [Keyword] - Select label Enterprise, radiobutton Anual, and value GBP
 
@@ -2453,7 +2453,7 @@ Resource    ../Resources/import.robot
     [Common] - Verify element should contain text       ${lb_usuários}                              £7
     sleep                                               1
     [Common] - Verify element should contain text       ${lb_usuários}                              /Mês
-    sleep                                               1                      
+    sleep                                               1                                           
 
 [Keyword] - Select label Enterprise, radiobutton Anual, and value EUR
 
@@ -2506,7 +2506,7 @@ Resource    ../Resources/import.robot
     [Common] - Verify element should contain text       ${lb_usuários}                              €8
     sleep                                               1
     [Common] - Verify element should contain text       ${lb_usuários}                              /Mês
-    sleep                                               1           
+    sleep                                               1                                           
 
 [Keyword] - Select label Enterprise, radiobutton Anual, and value DKK
 
@@ -2559,7 +2559,7 @@ Resource    ../Resources/import.robot
     [Common] - Verify element should contain text       ${lb_usuários}                              59,-
     sleep                                               1
     [Common] - Verify element should contain text       ${lb_usuários}                              /Mês
-    sleep                                               1           
+    sleep                                               1                                           
 
 [Keyword] - Select label Enterprise, radiobutton Anual, and value SEK
 
@@ -2612,7 +2612,7 @@ Resource    ../Resources/import.robot
     [Common] - Verify element should contain text       ${lb_usuários}                              79,-
     sleep                                               1
     [Common] - Verify element should contain text       ${lb_usuários}                              /Mês
-    sleep                                               1           
+    sleep                                               1                                           
 
 [Keyword] - Select label Enterprise, radiobutton Anual, and value NOK
 
@@ -2665,4 +2665,143 @@ Resource    ../Resources/import.robot
     [Common] - Verify element should contain text       ${lb_usuários}                              75,-
     sleep                                               1
     [Common] - Verify element should contain text       ${lb_usuários}                              /Mês
-    sleep                                               1           
+    sleep                                               1                                           
+
+[Keyword] - Click on button Compare Planos
+
+    [Common] - Click element                  ${btn_close_professional_imagepricefrom}
+    sleep                                     1
+    [Common] - Click element                  ${btn_compare_plans}
+    sleep                                     1
+    [Common] - Verify it redirects to page    ${title_compare_plans}
+    sleep                                     1
+
+[Keyword] - Click on button Treinamento de produto
+
+    [Common] - Scrolling page using JS executor      1800                                        
+    sleep                                            2
+    [Common] - Click element                         ${btn_close_professional_imagepricefrom}
+    sleep                                            1
+    [Common] - Click element                         ${label_professional}
+    sleep                                            1
+    [Common] - Click element                         ${btn_close_professional_imagepricefrom}
+    sleep                                            1
+    [Common] - Click element                         ${cartitem_product_training}
+    sleep                                            2
+    [Common] - Wait for element to appear on page    ${dialog_treinamento_de_produto}
+    sleep                                            1
+
+[Keyword] - Click on button Especificação Personalizada
+
+    [Common] - Scrolling page using JS executor      1800                                        
+    sleep                                            2
+    [Common] - Click element                         ${btn_close_professional_imagepricefrom}
+    sleep                                            1
+    [Common] - Click element                         ${label_professional}
+    sleep                                            1
+    [Common] - Click element                         ${cartitem_customer_specification}
+    sleep                                            2
+    [Common] - Wait for element to appear on page    ${dialog_especificação_Personalizada}
+    sleep                                            1
+
+[Keyword] - Click on button Onboarding
+
+    [Common] - Scrolling page using JS executor      1800                                        
+    sleep                                            2
+    [Common] - Click element                         ${btn_close_professional_imagepricefrom}
+    sleep                                            1
+    [Common] - Click element                         ${label_professional}
+    sleep                                            1
+    [Common] - Click element                         ${cartitem_product_onboarding}
+    sleep                                            2
+    [Common] - Wait for element to appear on page    ${dialog_onboarding}
+    sleep                                            1
+
+[Keyword] - Click on button Onboarding avançado
+
+    [Common] - Scrolling page using JS executor      1800                                        
+    sleep                                            2
+    [Common] - Click element                         ${btn_close_professional_imagepricefrom}
+    sleep                                            1
+    [Common] - Click element                         ${label_professional}
+    sleep                                            1
+    [Common] - Click element                         ${cartitem_product_advanced_onboarding}
+    sleep                                            2
+    [Common] - Wait for element to appear on page    ${dialog_onboarding_avançado}
+    sleep                                            1
+
+[Keyword] - Click on button Historia
+
+    [Common] - Scrolling page using JS executor      1800                                        
+    sleep                                            2
+    [Common] - Click element                         ${btn_close_professional_imagepricefrom}
+    sleep                                            1
+    [Common] - Click element                         ${icon_history}
+    sleep                                            1
+    [Common] - Verify element should contain text    ${description_icon}                         Já estivemos onde você está agora, a procura de uma solução de pós produção de imagens que possa ser escalada de acordo as necessidades sasonais mantendo a qualidade consistente, e obter as imagens editadas no menor tempo. Como não conseguimos achar, decidimos criar esta solução, e agora você se beneficia também de uma solução criada diretamente como resposta a decadas de experiencia em ecommerce.
+
+
+[Keyword] - Click on button Enfoque
+
+    [Common] - Scrolling page using JS executor      1800                                        
+    sleep                                            2
+    [Common] - Click element                         ${btn_close_professional_imagepricefrom}
+    sleep                                            1
+    [Common] - Click element                         ${icon_approach}
+    sleep                                            1
+    [Common] - Verify element should contain text    ${description_icon}                         Seu produto, imagens e negócios são únicos. Reflita isso selecionando um de nossos flexíveis serviços para otimizar seu fluxo de trabalho. Gerentes de produto e suporte responsivo são projetados para manter nossa tecnologia evoluindo da maneira mais útil possível.
+    sleep                                            1
+
+[Keyword] - Click on button Cultura
+
+    [Common] - Scrolling page using JS executor      1800                                        
+    sleep                                            2
+    [Common] - Click element                         ${btn_close_professional_imagepricefrom}
+    sleep                                            1
+    [Common] - Click element                         ${icon_culture}
+    sleep                                            1
+    [Common] - Verify element should contain text    ${description_icon}                         Ligue-nos: nós apreciamos construir relacionamentos genuínos. O suporte local, um background em comércio eletrônico e orgulho em nosso trabalho facilitam a comunicação e fazem negócios divertidos. Nossas políticas de responsabilidade social corporativa criam empregos com igualdade de oportunidades em nossos escritórios em todo o mundo.
+    sleep                                            1
+
+[Keyword] - Click on button Metodologia
+
+    [Common] - Scrolling page using JS executor      1800                                        
+    sleep                                            2
+    [Common] - Click element                         ${btn_close_professional_imagepricefrom}
+    sleep                                            1
+    [Common] - Click element                         ${icon_method}
+    sleep                                            1
+    [Common] - Verify element should contain text    ${description_icon}                         Obtenha imagens entregues quando e onde você precisar delas usando a web, FTP, fluxos de trabalho personalizados ou integração de API. A tecnologia de produção digital proprietária S.A.W; proporciona uma consistência, qualidade e tempos de resposta sem precedentes.
+
+[Keyword] - Click on button Obter Cotação
+
+    [Common] - Scrolling page using JS executor    400                    
+    sleep                                          2
+    [Common] - Click element                       ${label_enterprise}
+    sleep                                          1
+    [Common] - Click element                       ${btn_get_quote}
+    sleep                                          1
+    [Common] - Verify it redirects to page         ${title_get_quote}
+    sleep                                          1
+
+[Keyword] - Click on button Teste Gratuito with label Solo
+
+    [Common] - Scrolling page using JS executor    400                       
+    sleep                                          2
+    [Common] - Click element                       ${label_solo}
+    sleep                                          1
+    [Common] - Click element                       ${btn_solo_free_trial}
+    sleep                                          1
+    [Common] - Verify it redirects to page         ${title_free_trial}
+    sleep                                          1
+
+[Keyword] - Click on button Teste Gratuito with label Professional
+
+    [Common] - Scrolling page using JS executor    400                               
+    sleep                                          2
+    [Common] - Click element                       ${label_professional}
+    sleep                                          1
+    [Common] - Click element                       ${btn_professional_free_trial}
+    sleep                                          1
+    [Common] - Verify it redirects to page         ${title_free_trial}
+    sleep                                          1
