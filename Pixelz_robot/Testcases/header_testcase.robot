@@ -9,6 +9,9 @@ Test Teardown    [Keyword] - Close browser
 [PX_00001] - Check when click on the Logo
     [Keyword] - Click on Logo Pixelz
 
+[PX_00002] - Check labels on menu bar
+    [Keyword] - Verify element should contain text
+
 [PX_00003] - Check when hover on PLANS item
     [Keyword] - Hover on PLANS item
 
@@ -151,7 +154,7 @@ Test Teardown    [Keyword] - Close browser
     [Keyword] - Click on Danmark item of Location list
 
 [PX_00052] - Check when hover on Deutschland of LOCATION list
-    [Keyword] - Hover on Deutschland item of Location list
+    [Keyword] - Hover on Deutschland item of Location list+
 
 [PX_00054] - Check when click on Deutschland of LOCATION list
     [Keyword] - Click on Deutschland item of Location list

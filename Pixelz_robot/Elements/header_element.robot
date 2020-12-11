@@ -5,6 +5,7 @@ ${accept}       //a[@id='hs-eu-confirmation-button']
 ${btn_close}    //i[@title='Dismiss']
 ## --- logo
 ${logo}             //img[@class='logo logo-light']
+${menu_bar}         //div[@class='module-group right']
 
 ## --- locator of menuitem home
 ${menuitem_home}    //a[contains(.,'Home')]

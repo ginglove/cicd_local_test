@@ -2,8 +2,25 @@
 Resource    ../Resources/import.robot
 
 *** Keywords ***
-[Keyword] -
-    [Common] - Verify element should contain text       ${cb_customer_retouch}                      Retoque personalizado
+[Keyword] - Verify element should contain text
+    [Common] - Verify element should contain text   ${menu_bar}     PLANS
+    sleep       2
+    [Common] - Verify element should contain text   ${menu_bar}     CUSTOMERS
+    sleep       2
+    [Common] - Verify element should contain text   ${menu_bar}     PRICING
+    sleep       2
+    [Common] - Verify element should contain text   ${menu_bar}     FLOW
+    sleep       2
+    [Common] - Verify element should contain text   ${menu_bar}     RESOURCES
+    sleep       2
+    [Common] - Verify element should contain text   ${menu_bar}     ABOUT US
+    sleep       2
+    [Common] - Verify element should contain text   ${menu_bar}     LOG IN
+    sleep       2
+    [Common] - Verify element should contain text   ${menu_bar}     SIGN UP
+    sleep       2
+    [Common] - Verify element should contain text   ${menu_bar}     LOCATION
+    sleep       2
 
 [Keyword] - Click on Logo Pixelz
     [Common] - Click element    ${logo}
