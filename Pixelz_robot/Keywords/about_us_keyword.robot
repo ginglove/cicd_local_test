@@ -4,9 +4,9 @@ Resource    ../Resources/import.robot
 *** Keywords ***
 [Keyword] - Click on the photo on photo list
    [Common] - Click element    ${dropdownlist_aboutus}
-    sleep                       5
+    sleep                       8
    [Common] - Click element    ${dropdownlistItem_origin}
-    sleep                       2
+    sleep                       4
    execute javascript   window.scrollTo(0,2300)
    sleep                       5
    [Common] - Click element    ${photo}
