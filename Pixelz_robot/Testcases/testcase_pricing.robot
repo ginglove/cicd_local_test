@@ -237,5 +237,5 @@ PX_00156 - Check when click on button [Teste Gratuito] with label [Professional]
 
     [Keyword] - Click on button Teste Gratuito with label Professional
 
-[Keyword] - Click on button Teste Gratuito with label Professional
+
 
