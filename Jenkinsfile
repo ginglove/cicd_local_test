@@ -42,4 +42,16 @@ pipeline {
             }            
         }
     }
+    post {
+            always {
+                deleteDir() /* clean up our workspace */
+                echo "Pipeline current Results : ${currentBuild.currentResult}"
+            }
+            success {
+                slackSend (color: 'green', message: "SUCCESS: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL}),(${currentBuild.description})")
+            }
+            failure {
+                slackSend (color: 'red', message: "FAILURE: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL}) ,(${currentBuild.description})")
+            }
+        }        
 }
