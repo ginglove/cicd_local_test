@@ -16,8 +16,9 @@ pipeline {
                 sh  'pip3.7 list'
             }
         }
-        stage('Verify Robot Version'){
+        stage('Run Robot Test and Publish Report'){
             steps{ 
+                slackSend(color: 'green', message: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL}),(${currentBuild.description})")
                 sh 'ls -al'
                 sh 'sh ./Data/run.sh'
                 sh 'rm -rf ./results'
@@ -48,10 +49,10 @@ pipeline {
                 echo "Pipeline current Results : ${currentBuild.currentResult}"
             }
             success {
-                slackSend (color: 'green', message: "SUCCESS: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL}),(${currentBuild.description})")
+                slackSend (color: 'green', message: "SUCCESS : Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL}),(${currentBuild.description})")
             }
             failure {
-                slackSend (color: 'red', message: "FAILURE: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL}) ,(${currentBuild.description})")
+                slackSend (color: 'red', message: "FAILURE : Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL}) ,(${currentBuild.description})")
             }
         }        
 }
