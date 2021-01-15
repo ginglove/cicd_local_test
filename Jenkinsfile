@@ -21,7 +21,7 @@ pipeline {
                 sh  'chromedriver --version'
             }
         }
-        stage('Verify Robot Version'){
+        stage('Running Robot Script'){
             steps{ 
                 sh 'ls -al'
                 sh 'sh ./Scripts/run.sh'
@@ -58,18 +58,22 @@ pipeline {
             success {
                 slackSend (color: 'green', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}] 
                 By ${BUILD_USER}\n 
-                More info at: ${env.BUILD_URL}")
+                Stage : ${Stage}\n
+                More info at: ${env.BUILD_URL}\n
+                Total Running Time : ${currentBuild.durationString.replace(' and counting', '')}")
             }
             unstable{
                 slackSend (color: 'danger', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}] 
                 By : ${BUILD_USER}\n 
-                More info at: ${env.BUILD_URL}")
-
+                More info at: ${env.BUILD_URL}\n
+                Total Running Time : ${currentBuild.durationString.replace(' and counting', '')}")
             }
             failure {
                 slackSend (color: 'red', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}] 
                 By :  ${BUILD_USER}\n 
-                More info at: ${env.BUILD_URL}")
+                Stage : ${Stage}\n
+                More info at: ${env.BUILD_URL}\n
+                Total Running Time : ${currentBuild.durationString.replace(' and counting', '')}")
             }
         }    
 }
