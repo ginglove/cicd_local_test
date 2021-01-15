@@ -1,6 +1,12 @@
+def getBuildUser() {
+    return currentBuild.rawBuild.getCause(Cause.UserIdCause).getUserId()
+}
 pipeline {
 //None parameter in the agent section means that no global agent will be allocated for the entire Pipeline’s
 //execution and that each stage directive must specify its own agent section.
+    environment {
+        BUILD_USER = ''
+    }
     agent {docker 
            {
                image 'ginglove/docker_robot_python_37:1.0.1'
@@ -13,17 +19,15 @@ pipeline {
                 sh  'echo "test"'
                 sh  'google-chrome --version'
                 sh  'chromedriver --version'
-                sh  'pip3.7 list'
             }
         }
-        stage('Run Robot Test and Publish Report'){
+        stage('Verify Robot Version'){
             steps{ 
-                slackSend(color: 'green', message: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL}),(${currentBuild.description})")
                 sh 'ls -al'
-                sh 'sh ./Data/run.sh'
+                sh 'sh ./Scripts/run.sh'
                 sh 'rm -rf ./results'
                 sh 'mkdir ./results'
-                sh 'cp -r ./Pixelz_robot/Testcases/Results/* ./results'
+                sh 'cp -r ./Testcases/LOS/Results/* ./results'
                 sh ' ls -al ./results'
                 script {
                   step(
@@ -45,13 +49,27 @@ pipeline {
     }
     post {
             always {
+            script {
+                BUILD_USER = getBuildUser()
+            }                
+                deleteDir() /* clean up our workspace */
                 echo "Pipeline current Results : ${currentBuild.currentResult}"
             }
             success {
-                slackSend (color: 'green', message: "SUCCESS : Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL}),(${currentBuild.description})")
+                slackSend (color: 'green', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}] 
+                By ${BUILD_USER}\n 
+                More info at: ${env.BUILD_URL}")
+            }
+            unstable{
+                slackSend (color: 'danger', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}] 
+                By : ${BUILD_USER}\n 
+                More info at: ${env.BUILD_URL}")
+
             }
             failure {
-                slackSend (color: 'red', message: "FAILURE : Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL}) ,(${currentBuild.description})")
+                slackSend (color: 'red', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}] 
+                By :  ${BUILD_USER}\n 
+                More info at: ${env.BUILD_URL}")
             }
-        }        
+        }    
 }
