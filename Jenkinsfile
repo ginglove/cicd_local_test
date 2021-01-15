@@ -1,6 +1,3 @@
-def getBuildUser() {
-    return currentBuild.rawBuild.getCause(Cause.UserIdCause).getUserId()
-}
 def msg_details = """${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}]
   Job Name: ${env.JOB_NAME}
   Build: ${env.BUILD_NUMBER}
@@ -54,10 +51,7 @@ pipeline {
         }
     }
     post {
-            always {
-            script {
-                BUILD_USER = getBuildUser()
-            }                
+            always {     
                 deleteDir() /* clean up our workspace */
                 echo "Pipeline current Results : ${currentBuild.currentResult}"
             }
