@@ -62,7 +62,7 @@ pipeline {
                 echo "Pipeline current Results : ${currentBuild.currentResult}"
             }
             success {
-                slackSend (color: 'green', message: msg_details
+                slackSend (color: 'green', message: msg_details)
             }
             unstable{
                 slackSend (color: 'danger', message: msg_details)
