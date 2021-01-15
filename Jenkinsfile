@@ -30,10 +30,10 @@ pipeline {
         stage('Running Robot Script'){
             steps{ 
                 sh 'ls -al'
-                sh 'sh ./Scripts/run.sh'
+                sh 'sh ./Data/run.sh'
                 sh 'rm -rf ./results'
                 sh 'mkdir ./results'
-                sh 'cp -r ./Testcases/LOS/Results/* ./results'
+                sh 'cp -r ./Pixelz_robot/Testcases/Results/* ./results'
                 sh ' ls -al ./results'
                 script {
                   step(
