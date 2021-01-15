@@ -1,6 +1,12 @@
 def getBuildUser() {
     return currentBuild.rawBuild.getCause(Cause.UserIdCause).getUserId()
 }
+def msg_details = """${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}]
+  Job Name: ${env.JOB_NAME}
+  Build: ${env.BUILD_NUMBER}
+  Check console output this build at: ${env.BUILD_URL}
+  Total Running Time : ${currentBuild.durationString.replace(' and counting', '')}"
+  """
 pipeline {
 //None parameter in the agent section means that no global agent will be allocated for the entire Pipeline’s
 //execution and that each stage directive must specify its own agent section.
@@ -56,24 +62,13 @@ pipeline {
                 echo "Pipeline current Results : ${currentBuild.currentResult}"
             }
             success {
-                slackSend (color: 'green', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}]\n 
-                By ${BUILD_USER}\n 
-                Stage : ${Stage}\n
-                More info at: ${env.BUILD_URL}\n
-                Total Running Time : ${currentBuild.durationString.replace(' and counting', '')}")
+                slackSend (color: 'green', message: msg_details
             }
             unstable{
-                slackSend (color: 'danger', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}]\n 
-                By : ${BUILD_USER}\n 
-                More info at: ${env.BUILD_URL}\n
-                Total Running Time : ${currentBuild.durationString.replace(' and counting', '')}")
+                slackSend (color: 'danger', message: msg_details)
             }
             failure {
-                slackSend (color: 'red', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}]\n 
-                By :  ${BUILD_USER}\n 
-                Stage : ${Stage}\n
-                More info at: ${env.BUILD_URL}\n
-                Total Running Time : ${currentBuild.durationString.replace(' and counting', '')}")
+                slackSend (color: 'red', message: msg_details)
             }
         }    
 }
