@@ -1,9 +1,13 @@
+def f = new File("/tmp/buildStart.txt")
+def startDate = new Date().parse('dd/MM/yyyy HH:mm:ss',f.text)
+def endDate = new Date()
+def tookTime = groovy.time.TimeCategory.minus(endDate,startDate).toString()
 def msg_details = """${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}]
   Job Name: ${env.JOB_NAME}
   Build: ${env.BUILD_NUMBER}
   Check console output this build at: ${env.BUILD_URL}
   Total Running Time : ${currentBuild.durationString.replace(' and counting', '')}
-  ${currentBuild.durationString}
+  tookTime
   """
 pipeline {
 //None parameter in the agent section means that no global agent will be allocated for the entire Pipeline’s
