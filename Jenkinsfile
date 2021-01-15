@@ -2,7 +2,8 @@ def msg_details = """${currentBuild.currentResult}: Job ${env.JOB_NAME} build [$
   Job Name: ${env.JOB_NAME}
   Build: ${env.BUILD_NUMBER}
   Check console output this build at: ${env.BUILD_URL}
-  Total Running Time : ${currentBuild.durationString.replace(' and counting', '')}"
+  Total Running Time : ${currentBuild.durationString.replace(' and counting', '')}
+  "${env.BUILD_URL}/job/BranchBuild/buildTimeTrend"
   """
 pipeline {
 //None parameter in the agent section means that no global agent will be allocated for the entire Pipeline’s
