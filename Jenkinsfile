@@ -56,20 +56,20 @@ pipeline {
                 echo "Pipeline current Results : ${currentBuild.currentResult}"
             }
             success {
-                slackSend (color: 'green', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}] 
+                slackSend (color: 'green', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}]\n 
                 By ${BUILD_USER}\n 
                 Stage : ${Stage}\n
                 More info at: ${env.BUILD_URL}\n
                 Total Running Time : ${currentBuild.durationString.replace(' and counting', '')}")
             }
             unstable{
-                slackSend (color: 'danger', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}] 
+                slackSend (color: 'danger', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}]\n 
                 By : ${BUILD_USER}\n 
                 More info at: ${env.BUILD_URL}\n
                 Total Running Time : ${currentBuild.durationString.replace(' and counting', '')}")
             }
             failure {
-                slackSend (color: 'red', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}] 
+                slackSend (color: 'red', message: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build [${env.BUILD_NUMBER}]\n 
                 By :  ${BUILD_USER}\n 
                 Stage : ${Stage}\n
                 More info at: ${env.BUILD_URL}\n
